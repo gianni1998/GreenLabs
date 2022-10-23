@@ -10,7 +10,7 @@ This repository contains the replication package for the research paper: "Who dr
 
 ## How to run the experiment?
 ### Preparation
-Install Android version 6.0.1 on the smartphone 
+Install Android version 6.0.1 on the smartphone and dowload the native applications from the selected application list.
 
 ### Set up
 
