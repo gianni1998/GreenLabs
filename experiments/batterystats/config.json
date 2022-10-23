@@ -1,0 +1,43 @@
+{
+  "type": "native",
+  "devices": {
+    "nexus5x": {}
+  },
+  "repetitions": 10,
+  "duration": 100000,
+  "monkeyrunner_path": "/android-runner/MonkeyPlayer",
+  "systrace_path": "Android/sdk/platform-tools/systrace/systrace.py",
+  "powerprofile_path": "android-runner/examples/batterystats/Scripts/power_profile.xml",
+  "randomization": false,
+  "apps": [
+    "com.google.android.youtube",
+    "com.pinterest",
+    "com.facebook.katana",
+    "com.reddit.frontpage",
+    "com.twitter.android",
+    "com.linkedin.android",
+    "com.tumblr",
+    "com.instagram.android",
+    "com.flickr.android"
+  ],
+  "profilers": {
+    "batterystats": {
+      "cleanup": true 
+    }
+  },
+  "scripts": {
+    "before_experiment": "Scripts/before_experiment.py",
+    "before_run": "Scripts/before_run.py",
+    "after_launch": "Scripts/after_launch.py",
+    "before_close": "Scripts/before_close.py",
+    "after_run": "Scripts/after_run.py",
+    "after_experiment": "Scripts/after_experiment.py",
+    "interaction": [
+      {
+        "type": "monkeyreplay",
+        "path": "MonkeyScripts/test1.txt"
+      }
+    ]
+  },
+  "time_between_run": 60000
+}
