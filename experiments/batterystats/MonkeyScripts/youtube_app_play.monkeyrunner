@@ -1,0 +1,4 @@
+PRESS|{'name':'SEARCH','type':'downAndUp',}
+TYPE|{'message':'rick roll',}
+TOUCH|{'x':556,'y':976,'type':'downAndUp',}
+WAIT|{'seconds':10.0,}

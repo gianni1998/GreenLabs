@@ -1,0 +1,7 @@
+TOUCH|{'x':297,'y':166,'type':'downAndUp',}
+TOUCH|{'x':330,'y':292,'type':'downAndUp',}
+TYPE|{'message':'rick roll',}
+TOUCH|{'x':1002,'y':1957,'type':'downAndUp',}
+WAIT|{'seconds':10.0,}
+TOUCH|{'x':1650,'y':391,'type':'downAndUp',}
+TOUCH|{'x':1626,'y':837,'type':'downAndUp',}

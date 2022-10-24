@@ -1,0 +1,8 @@
+TOUCH|{'x':378,'y':1971,'type':'downAndUp',}
+WAIT|{'seconds':4.0,}
+TOUCH|{'x':391,'y':427,'type':'downAndUp',}
+WAIT|{'seconds':4.0,}
+TYPE|{'message':'rickroll',}
+WAIT|{'seconds':4.0,}
+TOUCH|{'x':232,'y':499,'type':'downAndUp',}
+WAIT|{'seconds':10.0,}

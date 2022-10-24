@@ -1,0 +1,4 @@
+TOUCH|{'x':320,'y':126,'type':'downAndUp',}
+TYPE|{'message':'rick roll',}
+TOUCH|{'x':985,'y':1957,'type':'downAndUp',}
+WAIT|{'seconds':10.0,}
