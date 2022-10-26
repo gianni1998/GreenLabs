@@ -17,12 +17,17 @@ levels(df$AndroidApp)
 
 summary(df)
 
-
 df %>% group_by(Name) %>% 
   summarize(mean_cons = mean(EnergyConsumption), 
   sd_cons = sd(EnergyConsumption))
 
-boxplot(EnergyConsumption~AndroidApp, df) 
+#boxplot(EnergyConsumption~AndroidApp, df)
+
+# Outlier removal
+outliers <- boxplot(EnergyConsumption~AndroidApp, df, plot=FALSE)$out
+df<-df[-which(df$EnergyConsumption %in% outliers),]
+
+boxplot(EnergyConsumption~AndroidApp, df)
 
 check_normality <- function(data) { 
   par(mfrow=c(1,2)) 
