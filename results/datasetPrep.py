@@ -6,7 +6,17 @@ import os
 
 NAME = 'Name'
 RUN = 'Run'
-CONSUMPTION = 'Energy Consumption (Joule)'
+TOTAL_CONSUMPTION = 'TotalEnergyConsumption'
+SCREEN_CONSUMPTION = 'ScreenEnergyConsumption'
+WIFI_CONSUMPTION= 'WiFiEnergyConsumption'
+GPS_CONSUMPTION = 'GPSEnergyConsumption'
+CORE_1_CONSUMPTION = 'Core1EnergyConsumption'
+CORE_2_CONSUMPTION = 'Core2EnergyConsumption'
+CORE_3_CONSUMPTION = 'Core3EnergyConsumption'
+CORE_4_CONSUMPTION = 'Core4EnergyConsumption'
+CORE_5_CONSUMPTION = 'Core5EnergyConsumption'
+CORE_6_CONSUMPTION = 'Core6EnergyConsumption'
+CORE_7_CONSUMPTION = 'Core7EnergyConsumption'
 ANDROID_APP = 'Android app'
 
 PATH_TO_DATA = ''
@@ -21,13 +31,44 @@ def read_files(folder: str) -> List[str]:
 
     return files
 
+# screen dark
+# wifi running
+# wifi scan
+# gps
+# core 0 cpu_idle start
+# core 0 cpu_idle
+# core 0 cpu_frequency
+# core 1 cpu_idle start
+# core 1 cpu_idle
+# core 1 cpu_frequency
+# core 2 cpu_idle start
+# core 2 cpu_idle
+# core 2 cpu_frequency
+# core 3 cpu_idle start
+# core 3 cpu_idle
+# core 3 cpu_frequency
+# core 4 cpu_idle start
+# core 4 cpu_idle
+# core 4 cpu_frequency
+# core 5 cpu_idle start
+# core 5 cpu_idle
+# core 5 cpu_frequency
+# core 6 cpu_idle start
+# core 6 cpu_idle
+# core 6 cpu_frequency
+# core 7 cpu_idle start
+# core 7 cpu_idle
+# core 7 cpu_frequency
 
 def transform(files: List[str], app: str, is_android: int) -> pd.DataFrame:
-    result_df = pd.DataFrame(columns=[NAME, RUN, CONSUMPTION, ANDROID_APP])
+    result_df = pd.DataFrame(columns=[NAME, RUN, TOTAL_CONSUMPTION, ANDROID_APP])
 
     for i in range(0, len(files)):
         df = pd.read_csv(files[i])
-        new_row = pd.DataFrame({NAME: app, RUN: i, CONSUMPTION: pd.Series(df[CONSUMPTION], dtype="float64").sum(), ANDROID_APP: is_android}, index=[0])
+        new_row = pd.DataFrame({NAME: app, RUN: i,
+                                TOTAL_CONSUMPTION: pd.Series(df[TOTAL_CONSUMPTION], dtype="float64").sum(),
+                                SCREEN_CONSUMPTION: 0,
+                                ANDROID_APP: is_android}, index=[0])
 
         result_df = pd.concat([result_df, new_row], ignore_index=True)
 
