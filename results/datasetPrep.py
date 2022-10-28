@@ -8,8 +8,10 @@ NAME = 'Name'
 RUN = 'Run'
 TOTAL_CONSUMPTION = 'TotalEnergyConsumption'
 SCREEN_CONSUMPTION = 'ScreenEnergyConsumption'
-WIFI_CONSUMPTION= 'WiFiEnergyConsumption'
+WIFI_CONSUMPTION = 'WiFiEnergyConsumption'
 GPS_CONSUMPTION = 'GPSEnergyConsumption'
+CPU_CONSUMPTION = 'CPUEnergyConsumption'
+CORE_0_CONSUMPTION = 'Core0EnergyConsumption'
 CORE_1_CONSUMPTION = 'Core1EnergyConsumption'
 CORE_2_CONSUMPTION = 'Core2EnergyConsumption'
 CORE_3_CONSUMPTION = 'Core3EnergyConsumption'
@@ -17,7 +19,7 @@ CORE_4_CONSUMPTION = 'Core4EnergyConsumption'
 CORE_5_CONSUMPTION = 'Core5EnergyConsumption'
 CORE_6_CONSUMPTION = 'Core6EnergyConsumption'
 CORE_7_CONSUMPTION = 'Core7EnergyConsumption'
-ANDROID_APP = 'Android app'
+ANDROID_APP = 'AndroidApp'
 
 PATH_TO_DATA = ''
 
@@ -61,13 +63,16 @@ def read_files(folder: str) -> List[str]:
 # core 7 cpu_frequency
 
 def transform(files: List[str], app: str, is_android: int) -> pd.DataFrame:
-    result_df = pd.DataFrame(columns=[NAME, RUN, TOTAL_CONSUMPTION, ANDROID_APP])
+    result_df = pd.DataFrame(columns=[NAME, RUN, TOTAL_CONSUMPTION, SCREEN_CONSUMPTION, WIFI_CONSUMPTION, GPS_CONSUMPTION, CPU_CONSUMPTION, ANDROID_APP])
 
     for i in range(0, len(files)):
         df = pd.read_csv(files[i])
         new_row = pd.DataFrame({NAME: app, RUN: i,
                                 TOTAL_CONSUMPTION: pd.Series(df[TOTAL_CONSUMPTION], dtype="float64").sum(),
                                 SCREEN_CONSUMPTION: 0,
+                                WIFI_CONSUMPTION: 0,
+                                GPS_CONSUMPTION: 0,
+                                CPU_CONSUMPTION: 0,
                                 ANDROID_APP: is_android}, index=[0])
 
         result_df = pd.concat([result_df, new_row], ignore_index=True)
