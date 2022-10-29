@@ -39,11 +39,12 @@ def get_file_n_names(is_android: bool) -> List[tuple]:
 
     for folder in data_folders:  
         try:
-            app = [ f.name for f in os.scandir(folder + '/data/samsung/') if f.is_dir() ][0]
+            #for app in 
+            for app in [ f.name for f in os.scandir(folder + '/data/samsung/') if f.is_dir() ]:
+                for file in os.listdir(folder + '/data/samsung/' + app + batterystats):
+                    if file.startswith('results_'):
+                        file_paths.append((app,os.path.abspath(folder + '/data/samsung/' + app + batterystats + file)))
 
-            for file in os.listdir(folder + '/data/samsung/' + app + batterystats):
-                if file.startswith('results_'):
-                    file_paths.append((app,os.path.abspath(folder + '/data/samsung/' + app + batterystats + file)))
         except:
             print(folder)
     
