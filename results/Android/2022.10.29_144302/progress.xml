@@ -1,0 +1,107 @@
+<experiment>
+  <configHash>427e44bdb29f11fff98a95d8b802df42</configHash>
+  <outputDir>/Users/quinn/Desktop/android-runner/experiments/batterystats/output/2022.10.29_144302/</outputDir>
+  <runsToRun/>
+  <runsDone>
+    <run runId="0">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="1">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="2">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="3">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="4">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="5">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="6">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="7">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="8">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="9">
+      <device>samsung</device>
+      <path>com.tumblr</path>
+      <runCount>10</runCount>
+    </run>
+    <run runId="10">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>1</runCount>
+    </run>
+    <run runId="11">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>2</runCount>
+    </run>
+    <run runId="12">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>3</runCount>
+    </run>
+    <run runId="13">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>4</runCount>
+    </run>
+    <run runId="14">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>5</runCount>
+    </run>
+    <run runId="15">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>6</runCount>
+    </run>
+    <run runId="16">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>7</runCount>
+    </run>
+    <run runId="17">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>8</runCount>
+    </run>
+    <run runId="18">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>9</runCount>
+    </run>
+    <run runId="19">
+      <device>samsung</device>
+      <path>com.zhiliaoapp.musically</path>
+      <runCount>10</runCount>
+    </run>
+  </runsDone>
+</experiment>

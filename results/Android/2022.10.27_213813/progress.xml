@@ -1,0 +1,12 @@
+<experiment>
+  <configHash>d2ec55fa62e9d743f26cffbb1055ceb4</configHash>
+  <outputDir>/Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/output/2022.10.27_213813/</outputDir>
+  <runsToRun/>
+  <runsDone>
+    <run runId="0">
+      <device>samsung</device>
+      <path>com.instagram.android</path>
+      <runCount>1</runCount>
+    </run>
+  </runsDone>
+</experiment>

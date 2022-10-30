@@ -1,0 +1,12 @@
+<experiment>
+  <configHash>ac069b81013618dc624afa02217d0cac</configHash>
+  <outputDir>/Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/output/2022.10.27_192936/</outputDir>
+  <runsToRun/>
+  <runsDone>
+    <run runId="0">
+      <device>samsung</device>
+      <path>com.google.android.youtube</path>
+      <runCount>1</runCount>
+    </run>
+  </runsDone>
+</experiment>

@@ -1,0 +1,1071 @@
+2022-10-27 22:56:53,439:INFO:ExperimentFactory:/Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/youtube.json
+2022-10-27 22:56:53,488:DEBUG:AndroidRunner.Adb:Device list:
+{0: 'ce0517150d4a122003'}
+2022-10-27 22:56:53,488:INFO:Device:Setting logcat buffer size to 57344K
+2022-10-27 22:56:53,664:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "logcat -G 57344K" returned: 
+
+2022-10-27 22:56:53,682:DEBUG:PluginHandler:batterystats: Initialized
+2022-10-27 22:56:53,683:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/before_experiment.py
+2022-10-27 22:56:53,684:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/before_run.py
+2022-10-27 22:56:53,685:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/after_launch.py
+2022-10-27 22:56:53,686:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/before_close.py
+2022-10-27 22:56:53,687:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/after_run.py
+2022-10-27 22:56:53,687:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/after_experiment.py
+2022-10-27 22:56:53,688:DEBUG:MonkeyReplay:Replay path: /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../MonkeyScripts/youtube_app_play.monkeyrunner
+2022-10-27 22:56:53,845:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:56:53,994:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:56:53,995:INFO:NativeExperiment:Device: samsung (ce0517150d4a122003, Android 9, API level 28)
+2022-10-27 22:56:53,995:INFO:Profilers:Loading
+2022-10-27 22:56:54,132:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:56:54,260:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:56:54,261:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Loading configuration
+2022-10-27 22:56:54,261:INFO:Device:Default unplug
+2022-10-27 22:56:54,390:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:56:54,548:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys battery unplug" returned: 
+
+2022-10-27 22:56:54,700:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:56:54,836:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:56:54,837:DEBUG:Scripts:Running hook before_experiment on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ()
+kwargs: {}
+2022-10-27 22:56:54,845:INFO:Python3:before_experiment.py
+2022-10-27 22:56:54,847:DEBUG:Python3:before_experiment.py returned None
+2022-10-27 22:56:54,849:INFO:Profilers:Setting output
+2022-10-27 22:56:54,850:DEBUG:PluginHandler:Batterystats: Setting output: /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/output/2022.10.27_225653/data/samsung/com-google-android-youtube/batterystats
+2022-10-27 22:56:54,850:INFO:NativeExperiment:Run 1/1 of subject "com.google.android.youtube" on samsung
+2022-10-27 22:56:55,622:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "logcat -c" returned: 
+
+2022-10-27 22:56:55,623:INFO:NativeExperiment:Logcat cleared
+2022-10-27 22:56:55,770:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:56:55,900:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:56:55,901:DEBUG:Scripts:Running hook before_run on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ()
+kwargs: {}
+2022-10-27 22:56:55,908:INFO:Python3:before_run.py
+2022-10-27 22:56:55,910:DEBUG:Python3:before_run.py returned None
+2022-10-27 22:56:56,829:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "monkey -p com.google.android.youtube 1" returned: 
+  bash arg: -p
+  bash arg: com.google.android.youtube
+  bash arg: 1
+args: [-p, com.google.android.youtube, 1]
+ arg: "-p"
+ arg: "com.google.android.youtube"
+ arg: "1"
+data="com.google.android.youtube"
+Events injected: 1
+## Network stats: elapsed time=87ms (0ms mobile, 0ms wifi, 87ms not connected)
+
+2022-10-27 22:56:57,933:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"" returned: 
+com.google.android.youtube
+
+
+2022-10-27 22:56:57,933:DEBUG:Device:Current activity: com.google.android.youtube
+2022-10-27 22:56:57,984:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:56:58,024:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:56:58,024:DEBUG:Scripts:Running hook after_launch on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ('ce0517150d4a122003', 'com.google.android.youtube')
+kwargs: {}
+2022-10-27 22:56:58,029:INFO:Python3:after_launch.py
+2022-10-27 22:56:58,030:DEBUG:Python3:after_launch.py returned None
+2022-10-27 22:56:58,033:INFO:Profilers:Start profiling
+2022-10-27 22:56:58,072:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:56:58,112:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:56:58,113:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Start profiling
+2022-10-27 22:56:58,195:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys batterystats --reset" returned: 
+Battery stats reset.
+
+2022-10-27 22:57:00,149:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:57:00,192:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:57:00,193:DEBUG:Scripts:Running hook interaction on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: (<AndroidRunner.NativeExperiment.NativeExperiment object at 0x7f7bc81b3250>,)
+kwargs: {}
+2022-10-27 22:57:00,198:INFO:MonkeyReplay:youtube_app_play.monkeyrunner
+2022-10-27 22:57:03,747:DEBUG:MonkeyReplay:monkeyrunner stdout: opened file
+could not replay action PRESS|{'name':'SEARCH','type':'downAndUp',}
+
+could not replay action TYPE|{'message':'rick roll',}
+
+could not replay action TOUCH|{'x':556,'y':976,'type':'downAndUp',}
+
+could not replay action WAIT|{'seconds':10.0,}
+
+0/4 actions completed
+done
+
+2022-10-27 22:57:03,748:DEBUG:MonkeyReplay:monkeyrunner stderr: 
+2022-10-27 22:57:03,749:DEBUG:MonkeyReplay:youtube_app_play.monkeyrunner returned 0
+2022-10-27 22:58:43,752:INFO:Profilers:Stop profiling
+2022-10-27 22:58:43,831:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:58:43,921:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:58:43,921:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Stop profiling
+2022-10-27 22:58:51,651:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"" returned: 
+com.google.android.youtube
+
+
+2022-10-27 22:58:51,651:DEBUG:Device:Current activity: com.google.android.youtube
+2022-10-27 22:58:51,740:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:58:51,832:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:58:51,833:DEBUG:Scripts:Running hook before_close on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ('ce0517150d4a122003', 'com.google.android.youtube')
+kwargs: {}
+2022-10-27 22:58:51,841:INFO:Python3:before_close.py
+2022-10-27 22:58:51,842:DEBUG:Python3:before_close.py returned None
+2022-10-27 22:58:52,137:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "am force-stop com.google.android.youtube" returned: 
+
+2022-10-27 22:58:55,232:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:58:55,358:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:58:55,378:DEBUG:Scripts:Running hook after_run on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ()
+kwargs: {}
+2022-10-27 22:58:55,387:INFO:Python3:after_run.py
+2022-10-27 22:58:56,191:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "input tap 600 1000" returned: 
+
+2022-10-27 22:58:56,192:DEBUG:Python3:after_run.py returned None
+2022-10-27 22:58:56,196:INFO:Profilers:Collecting results
+2022-10-27 22:58:56,266:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 22:58:56,353:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:58:56,354:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Collecting data
+2022-10-27 22:58:56,454:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:58:58,446:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "logcat -f /mnt/sdcard/logcat.txt -d" returned: 
+
+2022-10-27 22:58:58,800:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "rm -f /mnt/sdcard/logcat.txt" returned: 
+
+2022-10-27 22:58:59,061:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys batterystats --history" returned: 
+Battery History (0% used, 476 used of 512KB, 15 strings using 1104):
+                    0 (14) RESET:TIME: 2022-10-27-22-57-02
+                    0 (1) 100 status=full health=good plug=none temp=318 volt=4265 current=0 ap_temp=38 pst_temp=37 bat_temp=31 chg_temp=35 pa_temp=33 -tx_share misc_event=65536 online=19 current_event=0 charge=2967 +running +wake_lock +wifi_multicast +wifi_radio +screen phone_state=emergency phone_signal_strength=good +power_save +wifi_running +wifi +usb_data wifi_signal_strength=3 wifi_suppl=completed +ble_scan
+                    0 (2) 100 fg=u0a194:"com.sec.android.app.shealth"
+                    0 (2) 100 top=u0a178:"com.google.android.youtube"
+                    0 (2) 100 user=0:"0"
+                    0 (2) 100 user=150:"150"
+                    0 (2) 100 userfg=0:"0"
+                    0 (2) 100 longwake=u0a81:"*alarm*:com.samsung.action.EVERY_MINUTE_CLOCK_UPDATE"
+                 +2ms (2) 100 stats=0:"wakelock-change"
+                +40ms (2) 100 stats=0:"dump"
+               +321ms (2) 100 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +1s590ms (2) 100 pkgactive=u0a197:"com.google.vr.vrcore"
+             +2s877ms (2) 100 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +2s897ms (2) 100 +job=u0a197:"com.google.vr.vrcore/.phenotype.PhenotypeUpdateService"
+             +3s225ms (2) 100 -job=u0a197:"com.google.vr.vrcore/.phenotype.PhenotypeUpdateService"
+             +3s450ms (2) 100 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +3s845ms (2) 100 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +5s095ms (2) 100 +audio
+             +5s186ms (4) 100 current=0 ap_temp=41 pst_temp=37 bat_temp=31 chg_temp=37 pa_temp=34 -audio
+             +7s940ms (2) 100 +audio
+            +13s597ms (2) 100 +job=u0a377:"com.tumblr/androidx.work.impl.background.systemjob.SystemJobService"
+            +13s622ms (2) 100 -job=u0a377:"com.tumblr/androidx.work.impl.background.systemjob.SystemJobService"
+            +15s278ms (3) 100 current=0 ap_temp=39 pst_temp=37 bat_temp=31 chg_temp=36 pa_temp=34
+            +22s060ms (2) 100 pkgactive=u0a366:"com.samsung.android.kidsinstaller"
+            +25s359ms (3) 100 current=0 ap_temp=38 pst_temp=37 bat_temp=31 chg_temp=36 pa_temp=34
+            +35s443ms (4) 100 current=0 ap_temp=37 pst_temp=37 bat_temp=31 chg_temp=35 pa_temp=34 -longwake=u0a81:"*alarm*:com.samsung.action.EVERY_MINUTE_CLOCK_UPDATE"
+            +38s277ms (2) 100 -audio
+            +40s693ms (2) 100 +audio
+            +45s514ms (3) 100 current=0 ap_temp=38 pst_temp=38 bat_temp=31 chg_temp=35 pa_temp=34
+            +55s591ms (3) 100 current=0 ap_temp=37 pst_temp=38 bat_temp=31 chg_temp=35 pa_temp=34
+          +1m00s422ms (2) 100 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +1m00s567ms (2) 100 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +1m02s353ms (2) 100 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +1m02s388ms (2) 100 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +1m15s766ms (3) 100 current=0 ap_temp=37 pst_temp=38 bat_temp=31 chg_temp=35 pa_temp=33
+          +1m28s489ms (2) 100 stats=0:"get-stats"
+          +1m33s595ms (2) 100 -audio
+          +1m36s176ms (2) 100 +audio
+          +1m46s015ms (3) 100 current=0 ap_temp=39 pst_temp=38 bat_temp=31 chg_temp=36 pa_temp=34
+          +1m53s918ms (2) 100 -top=u0a178:"com.google.android.youtube"
+          +1m53s918ms (2) 100 +top=u0a377:"com.tumblr"
+          +1m54s124ms (3) 100 -audio +job=u0a377:"com.tumblr/.fcm.FCMTokenRegistrarJobService"
+          +1m54s499ms (3) 100 +audio -job=u0a377:"com.tumblr/.fcm.FCMTokenRegistrarJobService"
+          +1m55s114ms (2) 100 -audio
+          +1m55s313ms (2) 100 +audio
+          +1m58s536ms (2) 100 -audio
+          +1m58s764ms (2) 100 +audio
+          +2m00s801ms (2) 100 stats=0:"dump"
+
+Total cpu time reads: 1
+Batched cpu time reads: 0
+Batching Duration (min): 1161
+All UID cpu time reads since the later of device start or stats reset: 16
+UIDs removed since the later of device start or stats reset: 0
+KernelUidCpuTimeReader Exception :
+
+
+
+2022-10-27 22:58:59,447:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys batterystats | grep "Computed drain:"" returned: 
+    Capacity: 3000, Typical: 0, Computed drain: 18.3, actual drain: 0
+
+2022-10-27 22:58:59,780:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys batterystats | grep "volt="" returned: 
+                    0 (1) 100 status=full health=good plug=none temp=318 volt=4265 current=0 ap_temp=38 pst_temp=37 bat_temp=31 chg_temp=35 pa_temp=33 -tx_share misc_event=65536 online=19 current_event=0 charge=2967 +running +wake_lock +wifi_multicast +wifi_radio +screen phone_state=emergency phone_signal_strength=good +power_save +wifi_running +wifi +usb_data wifi_signal_strength=3 wifi_suppl=completed +ble_scan
+
+2022-10-27 22:59:00,521:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "cat /proc/cpuinfo | grep processor | wc -l" returned: 
+8
+
+2022-10-27 22:59:00,664:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 22:59:12,641:INFO:NativeExperiment:Sleeping for 60000 milliseconds
+2022-10-27 23:00:12,867:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "pm list packages" returned: 
+package:com.mobeam.barcodeService
+package:com.samsung.android.provider.filterprovider
+package:com.monotype.android.font.rosemary
+package:com.sec.android.app.DataCreate
+package:com.samsung.android.app.ledcoverdream
+package:com.android.cts.priv.ctsshim
+package:com.samsung.android.gearoplugin
+package:com.gd.mobicore.pa
+package:com.sec.android.widgetapp.samsungapps
+package:com.samsung.android.smartswitchassistant
+package:com.sec.vsim.ericssonnsds.webapp
+package:com.sec.android.app.setupwizardlegalprovider
+package:com.google.android.youtube
+package:com.samsung.android.app.galaxyfinder
+package:com.sec.location.nsflp2
+package:com.samsung.android.themestore
+package:com.sec.android.app.chromecustomizations
+package:com.samsung.android.app.aodservice
+package:com.samsung.android.app.cocktailbarservice
+package:com.android.internal.display.cutout.emulation.corner
+package:com.google.android.ext.services
+package:com.sec.android.app.suwscriptplayer
+package:com.android.internal.display.cutout.emulation.double
+package:com.android.providers.telephony
+package:com.sec.android.app.parser
+package:com.samsung.svoice.sync
+package:com.google.android.googlequicksearchbox
+package:com.samsung.android.calendar
+package:com.samsung.android.timezone.updater
+package:com.android.providers.calendar
+package:com.utorrent.client
+package:com.osp.app.signin
+package:com.samsung.clipboardsaveservice
+package:com.sec.automation
+package:com.android.providers.media
+package:com.samsung.android.app.social
+package:com.google.android.onetimeinitializer
+package:com.expressvpn.vpn
+package:com.sec.android.mimage.gear360editor
+package:com.google.android.ext.shared
+package:com.samsung.android.spdclient
+package:com.android.wallpapercropper
+package:com.teslacoilsw.launcher
+package:com.samsung.android.wallpaper.res
+package:com.samsung.android.smartmirroring
+package:com.skms.android.agent
+package:com.sec.android.desktopcommunity
+package:com.sec.android.app.safetyassurance
+package:com.samsung.gpudriver.S8MaliG71_90
+package:com.samsung.android.incallui
+package:com.samsung.android.knox.containercore
+package:com.samsung.android.kidsinstaller
+package:com.sec.factory.camera
+package:com.sec.vsimservice
+package:com.sec.usbsettings
+package:com.samsung.accessory.beansmgr
+package:com.samsung.android.easysetup
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.sec.android.easyonehand
+package:com.sec.factory
+package:com.samsung.android.provider.stickerprovider
+package:com.android.htmlviewer
+package:com.samsung.android.app.sbrowseredge
+package:com.android.companiondevicemanager
+package:com.android.mms.service
+package:com.samsung.android.rubin.app
+package:com.sec.android.wallpapercropper2
+package:com.android.providers.downloads
+package:com.diotek.sec.lookup.dictionary
+package:com.sec.android.cover.ledcover
+package:com.sec.android.easyMover.Agent
+package:com.samsung.ucs.agent.boot
+package:com.samsung.accessory.safiletransfer
+package:com.wsomacp
+package:com.samsung.faceservice
+package:com.sec.android.app.voicenote
+package:com.monotype.android.font.foundation
+package:com.sec.android.widgetapp.easymodecontactswidget
+package:com.samsung.android.email.provider
+package:com.samsung.android.MtpApplication
+package:com.sec.android.app.factorykeystring
+package:com.sec.android.app.samsungapps
+package:com.sec.android.emergencymode.service
+package:com.tplink.tether
+package:com.google.android.configupdater
+package:com.sec.android.app.wlantest
+package:com.microsoft.office.excel
+package:com.samsung.android.app.camera.sticker.facear.preload
+package:com.samsung.android.app.settings.bixby
+package:com.sec.android.app.billing
+package:com.samsung.android.app.selfmotionpanoramaviewer
+package:com.sec.epdgtestapp
+package:com.samsung.android.timezone.data_P
+package:com.samsung.android.game.gamehome
+package:com.sec.android.app.desktoplauncher
+package:com.android.defcontainer
+package:com.samsung.android.widgetapp.yahooedge.finance
+package:com.sec.android.daemonapp
+package:com.samsung.daydream.customization
+package:com.google.ar.core
+package:com.sec.ims
+package:com.sec.sve
+package:com.sec.enterprise.knox.attestation
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.simappdialog
+package:com.samsung.systemui.bixby2
+package:com.dsi.ant.service.socket
+package:com.sec.android.AutoPreconfig
+package:com.microsoft.skydrive
+package:com.samsung.android.SettingsReceiver
+package:com.android.internal.display.cutout.emulation.tall
+package:com.sec.android.app.soundalive
+package:com.sec.android.providers.security
+package:com.sec.android.provider.badge
+package:com.android.certinstaller
+package:de.axelspringer.yana.zeropage
+package:com.samsung.android.securitylogagent
+package:com.android.carrierconfig
+package:com.samsung.android.app.watchmanager
+package:com.samsung.android.knox.containeragent
+package:com.reddit.frontpage
+package:com.samsung.android.app.assistantmenu
+package:com.candl.chronos
+package:com.samsung.SMT
+package:com.samsung.cmh
+package:com.samsung.mlp
+package:com.samsung.rcs
+package:com.sec.android.ofviewer
+package:com.sec.factory.iris.usercamera
+package:com.samsung.android.drivelink.stub
+package:android
+package:com.android.hotwordenrollment.xgoogle
+package:com.samsung.android.sm.devicesecurity
+package:com.dsi.ant.sample.acquirechannels
+package:com.samsung.android.net.wifi.wifiguider
+package:com.samsung.android.bixby.service
+package:com.samsung.android.smartface
+package:com.android.egg
+package:com.android.mtp
+package:com.android.nfc
+package:com.android.stk
+package:com.samsung.android.messaging
+package:com.samsung.android.emojiupdater
+package:com.android.backupconfirm
+package:com.samsung.android.widgetapp.yahooedge.sport
+package:com.samsung.klmsagent
+package:com.instagram.android
+package:com.samsung.android.smartfitting
+package:com.sec.android.app.SecSetupWizard
+package:com.pinterest
+package:com.samsung.android.app.telephonyui
+package:com.samsung.android.samsungpositioning
+package:com.android.statementservice
+package:com.google.android.gm
+package:com.samsung.android.bixby.agent
+package:com.google.android.apps.tachyon
+package:com.sec.android.app.hwmoduletest
+package:com.android.settings.intelligence
+package:com.sec.bcservice
+package:org.chromium.webapk.a69ab1c52e5d4ce5d
+package:com.sec.modem.settings
+package:com.samsung.android.server.iris
+package:com.android.systemui.theme.dark
+package:com.samsung.android.providers.context
+package:com.sec.android.app.servicemodeapp
+package:com.sec.android.preloadinstaller
+package:com.sec.android.uibcvirtualsoftkey
+package:com.google.android.setupwizard
+package:com.sec.android.gallery3d
+package:com.android.providers.settings
+package:com.samsung.accessibility
+package:com.sec.imsservice
+package:com.android.sharedstoragebackup
+package:com.facebook.services
+package:com.google.android.music
+package:com.samsung.android.mobileservice
+package:com.android.printspooler
+package:com.android.hotwordenrollment.okgoogle
+package:com.samsung.android.hmt.vrsvc
+package:com.samsung.android.bixby.es.globalaction
+package:com.samsung.storyservice
+package:com.android.dreams.basic
+package:com.sec.android.app.music
+package:com.android.se
+package:com.android.inputdevices
+package:com.samsung.android.kgclient
+package:com.samsung.knox.securefolder
+package:com.samsung.android.app.talkback
+package:com.android.bips
+package:com.android.stk2
+package:com.samsung.android.game.gametools
+package:com.samsung.desktopsystemui
+package:com.samsung.android.app.simplesharing
+package:com.samsung.android.service.peoplestripe
+package:com.samsung.android.da.daagent
+package:com.sec.android.watchweb
+package:com.samsung.android.brightnessbackupservice
+package:com.samsung.android.app.reminder
+package:com.twitter.android
+package:com.samsung.app.slowmotion
+package:com.samsung.android.timezone.autoupdate_O
+package:com.samsung.android.smartcallprovider
+package:com.samsung.android.app.smartcapture
+package:com.sec.android.desktopmode.uiservice
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.dsi.ant.plugins.antplus
+package:com.samsung.android.app.taskedge
+package:com.microsoft.office.word
+package:com.samsung.advp.imssettings
+package:com.samsung.android.location
+package:com.sec.android.inputmethod
+package:com.samsung.android.app.advsounddetector
+package:com.teslacoilsw.launcher.prime
+package:com.sec.android.app.clockpackage
+package:com.sec.android.RilServiceModeApp
+package:com.google.android.webview
+package:com.samsung.android.mdecservice
+package:com.sec.android.app.simsettingmgr
+package:com.microsoft.office.powerpoint
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.samsung.crane
+package:com.sec.imslogger
+package:com.samsung.android.clipboarduiservice
+package:com.android.keychain
+package:com.android.chrome
+package:com.samsung.android.ipsgeofence
+package:com.samsung.android.themecenter
+package:com.google.android.packageinstaller
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tts
+package:android.autoinstalls.config.samsung
+package:com.android.calllogbackup
+package:com.google.android.partnersetup
+package:com.samsung.android.spdfnote
+package:com.sec.android.diagmonagent
+package:com.samsung.android.knox.containerdesktop
+package:com.google.android.videos
+package:com.mindesigns.zwskin.min
+package:com.sec.spp.push
+package:com.android.carrierdefaultapp
+package:com.dsi.ant.server
+package:com.sec.android.app.myfiles
+package:com.android.proxyhandler
+package:com.samsung.android.allshare.service.fileshare
+package:com.sec.android.mimage.photoretouching
+package:com.sec.android.app.launcher
+package:com.samsung.android.universalswitch
+package:com.zhiliaoapp.musically
+package:com.sec.android.app.apex
+package:com.flickr.android
+package:com.google.android.feedback
+package:com.google.android.printservice.recommendation
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.google.android.syncadapters.calendar
+package:com.android.managedprovisioning
+package:com.samsung.android.setting.multisound
+package:com.samsung.visionprovider
+package:com.samsung.android.authfw
+package:com.sec.android.app.sbrowser
+package:com.monotype.android.font.chococooky
+package:com.android.dreams.phototable
+package:com.sec.android.service.health
+package:com.samsung.safetyinformation
+package:com.samsung.android.dialer
+package:com.facebook.katana
+package:com.samsung.android.dqagent
+package:com.samsung.app.highlightplayer
+package:com.sec.android.app.ringtoneBR
+package:com.samsung.android.game.gos
+package:com.sec.android.app.vepreload
+package:com.android.providers.partnerbookmarks
+package:com.sem.factoryapp
+package:com.samsung.android.keyguardwallpaperupdator
+package:com.trustonic.teeservice
+package:com.android.wallpaper.livepicker
+package:com.samsung.android.beaconmanager
+package:com.sec.enterprise.mdm.services.simpin
+package:com.android.apps.tag
+package:com.samsung.android.stickercenter
+package:com.facebook.system
+package:com.samsung.android.oneconnect
+package:com.sec.android.app.popupcalculator
+package:com.sec.android.soagent
+package:com.google.android.gms.policy_sidecar_aps
+package:com.sec.android.app.quicktool
+package:com.samsung.android.fmm
+package:com.samsung.android.mdm
+package:com.samsung.android.rlc
+package:com.samsung.android.voc
+package:com.sec.android.app.shealth
+package:com.sec.unifiedwfc
+package:com.sec.phone
+package:com.samsung.android.bixby.wakeup
+package:com.samsung.accessory
+package:com.google.android.backuptransport
+package:com.samsung.android.app.interactivepanoramaviewer
+package:com.samsung.android.samsungpass
+package:com.samsung.android.bixby.plmsync
+package:com.android.storagemanager
+package:com.samsung.android.scloud
+package:com.samsung.android.app.soundpicker
+package:com.sec.app.RilErrorNotifier
+package:com.samsung.android.spayfw
+package:com.samsung.android.ststub
+package:com.android.bookmarkprovider
+package:com.linkedin.android
+package:com.android.settings
+package:com.samsung.app.newtrim
+package:fm.anchor.android
+package:com.samsung.android.dsms
+package:com.samsung.android.lool
+package:com.samsung.android.app.notes
+package:com.sec.android.app.bluetoothtest
+package:com.sec.android.sdhms
+package:com.samsung.android.app.spage
+package:com.incorporateapps.fakegps.fre
+package:com.samsung.android.knox.analytics.uploader
+package:com.samsung.android.sm.policy
+package:com.sec.android.emergencylauncher
+package:com.tumblr
+package:com.sec.hearingadjust
+package:com.sec.android.easyMover
+package:com.google.android.apps.turbo
+package:com.fastemulator.gbafree
+package:com.samsung.android.bluelightfilter
+package:com.samsung.android.bbc.bbcagent
+package:com.samsung.android.visionintelligence
+package:com.knox.vpn.proxyhandler
+package:com.android.cts.ctsshim
+package:com.sec.android.splitsound
+package:com.samsung.android.app.watchmanagerstub
+package:com.samsung.android.svcagent
+package:com.samsung.android.mateagent
+package:com.samsung.android.networkdiagnostic
+package:com.enhance.gameservice
+package:com.samsung.android.shortcutbackupservice
+package:com.android.vpndialogs
+package:com.samsung.ucs.agent.ese
+package:com.android.phone
+package:com.google.vr.vrcore
+package:com.android.shell
+package:com.android.wallpaperbackup
+package:com.android.providers.blockednumber
+package:com.samsung.android.app.omcagent
+package:com.hiya.star
+package:com.android.providers.userdictionary
+package:com.sec.enterprise.knox.cloudmdm.smdms
+package:com.samsung.android.app.camera.sticker.stamp.preload
+package:com.android.emergency
+package:com.wssyncmldm
+package:com.samsung.ims.smk
+package:com.android.location.fused
+package:com.samsung.android.app.appsedge
+package:com.samsung.android.samsungpassautofill
+package:com.sec.epdg
+package:com.android.systemui
+package:com.sec.android.app.personalization
+package:com.monotype.android.font.cooljazz
+package:com.android.bluetoothmidiservice
+package:com.samsung.android.sdk.handwriting
+package:com.facebook.appmanager
+package:com.samsung.aasaservice
+package:com.samsung.systemui.hidenotch
+package:com.android.traceur
+package:com.samsung.android.allshare.service.mediashare
+package:com.sec.android.provider.emergencymode
+package:com.google.android.play.games
+package:com.sec.android.app.applinker
+package:com.sec.android.app.camera
+package:com.android.bluetooth
+package:com.samsung.android.contacts
+package:com.samsung.android.app.clipboardedge
+package:com.android.providers.contacts
+package:com.samsung.ipservice
+package:com.sec.android.app.magnifier
+package:com.sec.android.widgetapp.webmanual
+package:com.samsung.sec.android.application.csc
+package:com.android.captiveportallogin
+package:com.samsung.android.app.motionpanoramaviewer
+package:com.samsung.android.bio.face.service
+package:com.samsung.android.bixby.agent.dummy
+package:com.samsung.android.video
+package:com.google.android.apps.restore
+
+2022-10-27 23:00:12,869:INFO:Profilers:Start subject aggregation
+2022-10-27 23:00:12,869:DEBUG:PluginHandler:%s: aggregating subject results
+2022-10-27 23:00:12,872:INFO:NativeExperiment:Experiment completed, start cleanup
+2022-10-27 23:00:12,945:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 23:00:13,020:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 23:00:13,020:DEBUG:Scripts:Running hook after_experiment on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ()
+kwargs: {}
+2022-10-27 23:00:13,026:INFO:Python3:after_experiment.py
+2022-10-27 23:00:13,029:DEBUG:Python3:after_experiment.py returned None
+2022-10-27 23:00:13,172:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys battery reset" returned: 
+
+2022-10-27 23:00:13,172:INFO:Profilers:Stop profiling
+2022-10-27 23:00:13,328:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 23:00:13,461:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 23:00:13,462:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Stop profiling
+2022-10-27 23:00:15,525:INFO:Profilers:Unloading
+2022-10-27 23:00:15,653:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 23:00:15,789:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 23:00:15,789:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Cleanup
+2022-10-27 23:00:16,191:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "pm list packages" returned: 
+package:com.mobeam.barcodeService
+package:com.samsung.android.provider.filterprovider
+package:com.monotype.android.font.rosemary
+package:com.sec.android.app.DataCreate
+package:com.samsung.android.app.ledcoverdream
+package:com.android.cts.priv.ctsshim
+package:com.samsung.android.gearoplugin
+package:com.gd.mobicore.pa
+package:com.sec.android.widgetapp.samsungapps
+package:com.samsung.android.smartswitchassistant
+package:com.sec.vsim.ericssonnsds.webapp
+package:com.sec.android.app.setupwizardlegalprovider
+package:com.google.android.youtube
+package:com.samsung.android.app.galaxyfinder
+package:com.sec.location.nsflp2
+package:com.samsung.android.themestore
+package:com.sec.android.app.chromecustomizations
+package:com.samsung.android.app.aodservice
+package:com.samsung.android.app.cocktailbarservice
+package:com.android.internal.display.cutout.emulation.corner
+package:com.google.android.ext.services
+package:com.sec.android.app.suwscriptplayer
+package:com.android.internal.display.cutout.emulation.double
+package:com.android.providers.telephony
+package:com.sec.android.app.parser
+package:com.samsung.svoice.sync
+package:com.google.android.googlequicksearchbox
+package:com.samsung.android.calendar
+package:com.samsung.android.timezone.updater
+package:com.android.providers.calendar
+package:com.utorrent.client
+package:com.osp.app.signin
+package:com.samsung.clipboardsaveservice
+package:com.sec.automation
+package:com.android.providers.media
+package:com.samsung.android.app.social
+package:com.google.android.onetimeinitializer
+package:com.expressvpn.vpn
+package:com.sec.android.mimage.gear360editor
+package:com.google.android.ext.shared
+package:com.samsung.android.spdclient
+package:com.android.wallpapercropper
+package:com.teslacoilsw.launcher
+package:com.samsung.android.wallpaper.res
+package:com.samsung.android.smartmirroring
+package:com.skms.android.agent
+package:com.sec.android.desktopcommunity
+package:com.sec.android.app.safetyassurance
+package:com.samsung.gpudriver.S8MaliG71_90
+package:com.samsung.android.incallui
+package:com.samsung.android.knox.containercore
+package:com.samsung.android.kidsinstaller
+package:com.sec.factory.camera
+package:com.sec.vsimservice
+package:com.sec.usbsettings
+package:com.samsung.accessory.beansmgr
+package:com.samsung.android.easysetup
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.sec.android.easyonehand
+package:com.sec.factory
+package:com.samsung.android.provider.stickerprovider
+package:com.android.htmlviewer
+package:com.samsung.android.app.sbrowseredge
+package:com.android.companiondevicemanager
+package:com.android.mms.service
+package:com.samsung.android.rubin.app
+package:com.sec.android.wallpapercropper2
+package:com.android.providers.downloads
+package:com.diotek.sec.lookup.dictionary
+package:com.sec.android.cover.ledcover
+package:com.sec.android.easyMover.Agent
+package:com.samsung.ucs.agent.boot
+package:com.samsung.accessory.safiletransfer
+package:com.wsomacp
+package:com.samsung.faceservice
+package:com.sec.android.app.voicenote
+package:com.monotype.android.font.foundation
+package:com.sec.android.widgetapp.easymodecontactswidget
+package:com.samsung.android.email.provider
+package:com.samsung.android.MtpApplication
+package:com.sec.android.app.factorykeystring
+package:com.sec.android.app.samsungapps
+package:com.sec.android.emergencymode.service
+package:com.tplink.tether
+package:com.google.android.configupdater
+package:com.sec.android.app.wlantest
+package:com.microsoft.office.excel
+package:com.samsung.android.app.camera.sticker.facear.preload
+package:com.samsung.android.app.settings.bixby
+package:com.sec.android.app.billing
+package:com.samsung.android.app.selfmotionpanoramaviewer
+package:com.sec.epdgtestapp
+package:com.samsung.android.timezone.data_P
+package:com.samsung.android.game.gamehome
+package:com.sec.android.app.desktoplauncher
+package:com.android.defcontainer
+package:com.samsung.android.widgetapp.yahooedge.finance
+package:com.sec.android.daemonapp
+package:com.samsung.daydream.customization
+package:com.google.ar.core
+package:com.sec.ims
+package:com.sec.sve
+package:com.sec.enterprise.knox.attestation
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.simappdialog
+package:com.samsung.systemui.bixby2
+package:com.dsi.ant.service.socket
+package:com.sec.android.AutoPreconfig
+package:com.microsoft.skydrive
+package:com.samsung.android.SettingsReceiver
+package:com.android.internal.display.cutout.emulation.tall
+package:com.sec.android.app.soundalive
+package:com.sec.android.providers.security
+package:com.sec.android.provider.badge
+package:com.android.certinstaller
+package:de.axelspringer.yana.zeropage
+package:com.samsung.android.securitylogagent
+package:com.android.carrierconfig
+package:com.samsung.android.app.watchmanager
+package:com.samsung.android.knox.containeragent
+package:com.reddit.frontpage
+package:com.samsung.android.app.assistantmenu
+package:com.candl.chronos
+package:com.samsung.SMT
+package:com.samsung.cmh
+package:com.samsung.mlp
+package:com.samsung.rcs
+package:com.sec.android.ofviewer
+package:com.sec.factory.iris.usercamera
+package:com.samsung.android.drivelink.stub
+package:android
+package:com.android.hotwordenrollment.xgoogle
+package:com.samsung.android.sm.devicesecurity
+package:com.dsi.ant.sample.acquirechannels
+package:com.samsung.android.net.wifi.wifiguider
+package:com.samsung.android.bixby.service
+package:com.samsung.android.smartface
+package:com.android.egg
+package:com.android.mtp
+package:com.android.nfc
+package:com.android.stk
+package:com.samsung.android.messaging
+package:com.samsung.android.emojiupdater
+package:com.android.backupconfirm
+package:com.samsung.android.widgetapp.yahooedge.sport
+package:com.samsung.klmsagent
+package:com.instagram.android
+package:com.samsung.android.smartfitting
+package:com.sec.android.app.SecSetupWizard
+package:com.pinterest
+package:com.samsung.android.app.telephonyui
+package:com.samsung.android.samsungpositioning
+package:com.android.statementservice
+package:com.google.android.gm
+package:com.samsung.android.bixby.agent
+package:com.google.android.apps.tachyon
+package:com.sec.android.app.hwmoduletest
+package:com.android.settings.intelligence
+package:com.sec.bcservice
+package:org.chromium.webapk.a69ab1c52e5d4ce5d
+package:com.sec.modem.settings
+package:com.samsung.android.server.iris
+package:com.android.systemui.theme.dark
+package:com.samsung.android.providers.context
+package:com.sec.android.app.servicemodeapp
+package:com.sec.android.preloadinstaller
+package:com.sec.android.uibcvirtualsoftkey
+package:com.google.android.setupwizard
+package:com.sec.android.gallery3d
+package:com.android.providers.settings
+package:com.samsung.accessibility
+package:com.sec.imsservice
+package:com.android.sharedstoragebackup
+package:com.facebook.services
+package:com.google.android.music
+package:com.samsung.android.mobileservice
+package:com.android.printspooler
+package:com.android.hotwordenrollment.okgoogle
+package:com.samsung.android.hmt.vrsvc
+package:com.samsung.android.bixby.es.globalaction
+package:com.samsung.storyservice
+package:com.android.dreams.basic
+package:com.sec.android.app.music
+package:com.android.se
+package:com.android.inputdevices
+package:com.samsung.android.kgclient
+package:com.samsung.knox.securefolder
+package:com.samsung.android.app.talkback
+package:com.android.bips
+package:com.android.stk2
+package:com.samsung.android.game.gametools
+package:com.samsung.desktopsystemui
+package:com.samsung.android.app.simplesharing
+package:com.samsung.android.service.peoplestripe
+package:com.samsung.android.da.daagent
+package:com.sec.android.watchweb
+package:com.samsung.android.brightnessbackupservice
+package:com.samsung.android.app.reminder
+package:com.twitter.android
+package:com.samsung.app.slowmotion
+package:com.samsung.android.timezone.autoupdate_O
+package:com.samsung.android.smartcallprovider
+package:com.samsung.android.app.smartcapture
+package:com.sec.android.desktopmode.uiservice
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.dsi.ant.plugins.antplus
+package:com.samsung.android.app.taskedge
+package:com.microsoft.office.word
+package:com.samsung.advp.imssettings
+package:com.samsung.android.location
+package:com.sec.android.inputmethod
+package:com.samsung.android.app.advsounddetector
+package:com.teslacoilsw.launcher.prime
+package:com.sec.android.app.clockpackage
+package:com.sec.android.RilServiceModeApp
+package:com.google.android.webview
+package:com.samsung.android.mdecservice
+package:com.sec.android.app.simsettingmgr
+package:com.microsoft.office.powerpoint
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.samsung.crane
+package:com.sec.imslogger
+package:com.samsung.android.clipboarduiservice
+package:com.android.keychain
+package:com.android.chrome
+package:com.samsung.android.ipsgeofence
+package:com.samsung.android.themecenter
+package:com.google.android.packageinstaller
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tts
+package:android.autoinstalls.config.samsung
+package:com.android.calllogbackup
+package:com.google.android.partnersetup
+package:com.samsung.android.spdfnote
+package:com.sec.android.diagmonagent
+package:com.samsung.android.knox.containerdesktop
+package:com.google.android.videos
+package:com.mindesigns.zwskin.min
+package:com.sec.spp.push
+package:com.android.carrierdefaultapp
+package:com.dsi.ant.server
+package:com.sec.android.app.myfiles
+package:com.android.proxyhandler
+package:com.samsung.android.allshare.service.fileshare
+package:com.sec.android.mimage.photoretouching
+package:com.sec.android.app.launcher
+package:com.samsung.android.universalswitch
+package:com.zhiliaoapp.musically
+package:com.sec.android.app.apex
+package:com.flickr.android
+package:com.google.android.feedback
+package:com.google.android.printservice.recommendation
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.google.android.syncadapters.calendar
+package:com.android.managedprovisioning
+package:com.samsung.android.setting.multisound
+package:com.samsung.visionprovider
+package:com.samsung.android.authfw
+package:com.sec.android.app.sbrowser
+package:com.monotype.android.font.chococooky
+package:com.android.dreams.phototable
+package:com.sec.android.service.health
+package:com.samsung.safetyinformation
+package:com.samsung.android.dialer
+package:com.facebook.katana
+package:com.samsung.android.dqagent
+package:com.samsung.app.highlightplayer
+package:com.sec.android.app.ringtoneBR
+package:com.samsung.android.game.gos
+package:com.sec.android.app.vepreload
+package:com.android.providers.partnerbookmarks
+package:com.sem.factoryapp
+package:com.samsung.android.keyguardwallpaperupdator
+package:com.trustonic.teeservice
+package:com.android.wallpaper.livepicker
+package:com.samsung.android.beaconmanager
+package:com.sec.enterprise.mdm.services.simpin
+package:com.android.apps.tag
+package:com.samsung.android.stickercenter
+package:com.facebook.system
+package:com.samsung.android.oneconnect
+package:com.sec.android.app.popupcalculator
+package:com.sec.android.soagent
+package:com.google.android.gms.policy_sidecar_aps
+package:com.sec.android.app.quicktool
+package:com.samsung.android.fmm
+package:com.samsung.android.mdm
+package:com.samsung.android.rlc
+package:com.samsung.android.voc
+package:com.sec.android.app.shealth
+package:com.sec.unifiedwfc
+package:com.sec.phone
+package:com.samsung.android.bixby.wakeup
+package:com.samsung.accessory
+package:com.google.android.backuptransport
+package:com.samsung.android.app.interactivepanoramaviewer
+package:com.samsung.android.samsungpass
+package:com.samsung.android.bixby.plmsync
+package:com.android.storagemanager
+package:com.samsung.android.scloud
+package:com.samsung.android.app.soundpicker
+package:com.sec.app.RilErrorNotifier
+package:com.samsung.android.spayfw
+package:com.samsung.android.ststub
+package:com.android.bookmarkprovider
+package:com.linkedin.android
+package:com.android.settings
+package:com.samsung.app.newtrim
+package:fm.anchor.android
+package:com.samsung.android.dsms
+package:com.samsung.android.lool
+package:com.samsung.android.app.notes
+package:com.sec.android.app.bluetoothtest
+package:com.sec.android.sdhms
+package:com.samsung.android.app.spage
+package:com.incorporateapps.fakegps.fre
+package:com.samsung.android.knox.analytics.uploader
+package:com.samsung.android.sm.policy
+package:com.sec.android.emergencylauncher
+package:com.tumblr
+package:com.sec.hearingadjust
+package:com.sec.android.easyMover
+package:com.google.android.apps.turbo
+package:com.fastemulator.gbafree
+package:com.samsung.android.bluelightfilter
+package:com.samsung.android.bbc.bbcagent
+package:com.samsung.android.visionintelligence
+package:com.knox.vpn.proxyhandler
+package:com.android.cts.ctsshim
+package:com.sec.android.splitsound
+package:com.samsung.android.app.watchmanagerstub
+package:com.samsung.android.svcagent
+package:com.samsung.android.mateagent
+package:com.samsung.android.networkdiagnostic
+package:com.enhance.gameservice
+package:com.samsung.android.shortcutbackupservice
+package:com.android.vpndialogs
+package:com.samsung.ucs.agent.ese
+package:com.android.phone
+package:com.google.vr.vrcore
+package:com.android.shell
+package:com.android.wallpaperbackup
+package:com.android.providers.blockednumber
+package:com.samsung.android.app.omcagent
+package:com.hiya.star
+package:com.android.providers.userdictionary
+package:com.sec.enterprise.knox.cloudmdm.smdms
+package:com.samsung.android.app.camera.sticker.stamp.preload
+package:com.android.emergency
+package:com.wssyncmldm
+package:com.samsung.ims.smk
+package:com.android.location.fused
+package:com.samsung.android.app.appsedge
+package:com.samsung.android.samsungpassautofill
+package:com.sec.epdg
+package:com.android.systemui
+package:com.sec.android.app.personalization
+package:com.monotype.android.font.cooljazz
+package:com.android.bluetoothmidiservice
+package:com.samsung.android.sdk.handwriting
+package:com.facebook.appmanager
+package:com.samsung.aasaservice
+package:com.samsung.systemui.hidenotch
+package:com.android.traceur
+package:com.samsung.android.allshare.service.mediashare
+package:com.sec.android.provider.emergencymode
+package:com.google.android.play.games
+package:com.sec.android.app.applinker
+package:com.sec.android.app.camera
+package:com.android.bluetooth
+package:com.samsung.android.contacts
+package:com.samsung.android.app.clipboardedge
+package:com.android.providers.contacts
+package:com.samsung.ipservice
+package:com.sec.android.app.magnifier
+package:com.sec.android.widgetapp.webmanual
+package:com.samsung.sec.android.application.csc
+package:com.android.captiveportallogin
+package:com.samsung.android.app.motionpanoramaviewer
+package:com.samsung.android.bio.face.service
+package:com.samsung.android.bixby.agent.dummy
+package:com.samsung.android.video
+package:com.google.android.apps.restore
+
+2022-10-27 23:00:16,192:INFO:Profilers:Start final aggregation
+2022-10-27 23:00:16,193:DEBUG:PluginHandler:%s: aggregating results

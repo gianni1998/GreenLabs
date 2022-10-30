@@ -1,0 +1,1387 @@
+2022-10-27 17:39:51,605:INFO:ExperimentFactory:/Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/youtube.json
+2022-10-27 17:39:51,674:DEBUG:AndroidRunner.Adb:Device list:
+{0: 'ce0517150d4a122003'}
+2022-10-27 17:39:51,674:INFO:Device:Setting logcat buffer size to 57344K
+2022-10-27 17:39:51,780:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "logcat -G 57344K" returned: 
+
+2022-10-27 17:39:51,808:DEBUG:PluginHandler:batterystats: Initialized
+2022-10-27 17:39:51,811:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/before_experiment.py
+2022-10-27 17:39:51,812:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/before_run.py
+2022-10-27 17:39:51,813:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/after_launch.py
+2022-10-27 17:39:51,815:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/before_close.py
+2022-10-27 17:39:51,815:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/after_run.py
+2022-10-27 17:39:51,816:DEBUG:Python3:Imported /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../Scripts/after_experiment.py
+2022-10-27 17:39:51,819:DEBUG:MonkeyReplay:Replay path: /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/../../MonkeyScripts/youtube_app_play.monkeyrunner
+2022-10-27 17:39:51,919:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 17:39:51,991:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:39:51,991:INFO:NativeExperiment:Device: samsung (ce0517150d4a122003, Android 9, API level 28)
+2022-10-27 17:39:51,991:INFO:Profilers:Loading
+2022-10-27 17:39:52,060:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 17:39:52,127:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:39:52,127:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Loading configuration
+2022-10-27 17:39:52,127:INFO:Device:Default unplug
+2022-10-27 17:39:52,201:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:39:52,297:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys battery unplug" returned: 
+
+2022-10-27 17:39:52,392:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 17:39:52,478:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:39:52,479:DEBUG:Scripts:Running hook before_experiment on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ()
+kwargs: {}
+2022-10-27 17:39:52,486:INFO:Python3:before_experiment.py
+2022-10-27 17:39:52,487:DEBUG:Python3:before_experiment.py returned None
+2022-10-27 17:39:52,490:INFO:Profilers:Setting output
+2022-10-27 17:39:52,491:DEBUG:PluginHandler:Batterystats: Setting output: /Users/quinn/Desktop/android-runner/experiments/batterystats/config/native/output/2022.10.27_173951/data/samsung/com-google-android-youtube/batterystats
+2022-10-27 17:39:52,491:INFO:NativeExperiment:Run 1/1 of subject "com.google.android.youtube" on samsung
+2022-10-27 17:39:52,615:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "logcat -c" returned: 
+
+2022-10-27 17:39:52,616:INFO:NativeExperiment:Logcat cleared
+2022-10-27 17:39:52,683:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 17:39:52,761:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:39:52,762:DEBUG:Scripts:Running hook before_run on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ()
+kwargs: {}
+2022-10-27 17:39:52,768:INFO:Python3:before_run.py
+2022-10-27 17:39:52,770:DEBUG:Python3:before_run.py returned None
+2022-10-27 17:39:53,513:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "monkey -p com.google.android.youtube 1" returned: 
+  bash arg: -p
+  bash arg: com.google.android.youtube
+  bash arg: 1
+args: [-p, com.google.android.youtube, 1]
+ arg: "-p"
+ arg: "com.google.android.youtube"
+ arg: "1"
+data="com.google.android.youtube"
+Events injected: 1
+## Network stats: elapsed time=46ms (0ms mobile, 0ms wifi, 46ms not connected)
+
+2022-10-27 17:39:54,586:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"" returned: 
+com.google.android.youtube
+
+
+2022-10-27 17:39:54,587:DEBUG:Device:Current activity: com.google.android.youtube
+2022-10-27 17:39:54,631:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 17:39:54,681:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:39:54,681:DEBUG:Scripts:Running hook after_launch on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ('ce0517150d4a122003', 'com.google.android.youtube')
+kwargs: {}
+2022-10-27 17:39:54,687:INFO:Python3:after_launch.py
+2022-10-27 17:39:54,689:DEBUG:Python3:after_launch.py returned None
+2022-10-27 17:39:54,692:INFO:Profilers:Start profiling
+2022-10-27 17:39:54,744:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 17:39:54,797:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:39:54,798:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Start profiling
+2022-10-27 17:39:54,959:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys batterystats --reset" returned: 
+Battery stats reset.
+
+2022-10-27 17:39:57,169:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 17:39:57,230:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:39:57,230:DEBUG:Scripts:Running hook interaction on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: (<AndroidRunner.NativeExperiment.NativeExperiment object at 0x7f8f0a1b22d0>,)
+kwargs: {}
+2022-10-27 17:39:57,237:INFO:MonkeyReplay:youtube_app_play.monkeyrunner
+2022-10-27 17:40:01,909:DEBUG:MonkeyReplay:monkeyrunner stdout: opened file
+could not replay action PRESS|{'name':'SEARCH','type':'downAndUp',}
+
+could not replay action TYPE|{'message':'rick roll',}
+
+could not replay action TOUCH|{'x':556,'y':976,'type':'downAndUp',}
+
+could not replay action WAIT|{'seconds':10.0,}
+
+0/4 actions completed
+done
+
+2022-10-27 17:40:01,910:DEBUG:MonkeyReplay:monkeyrunner stderr: 
+2022-10-27 17:40:01,911:DEBUG:MonkeyReplay:youtube_app_play.monkeyrunner returned 0
+2022-10-27 17:44:26,457:INFO:Profilers:Stop profiling
+2022-10-27 17:44:26,590:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 17:44:26,718:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 17:44:26,719:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Stop profiling
+2022-10-27 18:08:19,765:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys activity recents | grep "Recent #0" | cut -d "=" -f2 | grep -o -p "[a-z|.]*"" returned: 
+com.google.android.youtube
+
+
+2022-10-27 18:08:20,284:DEBUG:Device:Current activity: com.google.android.youtube
+2022-10-27 18:08:20,401:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 18:08:20,593:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 18:08:20,594:DEBUG:Scripts:Running hook before_close on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ('ce0517150d4a122003', 'com.google.android.youtube')
+kwargs: {}
+2022-10-27 18:08:20,613:INFO:Python3:before_close.py
+2022-10-27 18:08:20,615:DEBUG:Python3:before_close.py returned None
+2022-10-27 18:08:20,911:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "am force-stop com.google.android.youtube" returned: 
+
+2022-10-27 18:08:23,988:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 18:08:24,055:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 18:08:24,056:DEBUG:Scripts:Running hook after_run on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ()
+kwargs: {}
+2022-10-27 18:08:24,062:INFO:Python3:after_run.py
+2022-10-27 18:08:24,890:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "input tap 600 1000" returned: 
+
+2022-10-27 18:08:24,893:DEBUG:Python3:after_run.py returned None
+2022-10-27 18:08:24,897:INFO:Profilers:Collecting results
+2022-10-27 18:08:24,998:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 18:08:25,081:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 18:08:25,082:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Collecting data
+2022-10-27 18:08:25,147:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 18:08:33,967:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "logcat -f /mnt/sdcard/logcat.txt -d" returned: 
+
+2022-10-27 18:08:35,207:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "rm -f /mnt/sdcard/logcat.txt" returned: 
+
+2022-10-27 18:08:35,363:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys batterystats --history" returned: 
+Battery History (0% used, 3688 used of 512KB, 67 strings using 8750):
+                    0 (14) RESET:TIME: 2022-10-27-17-39-54
+                    0 (1) 088 status=charging health=good plug=none temp=283 volt=4310 current=845 ap_temp=32 pst_temp=32 bat_temp=28 chg_temp=31 pa_temp=30 -tx_share misc_event=65536 online=19 current_event=0 charge=2622 +running +wake_lock +wifi_multicast +wifi_radio +screen phone_state=emergency phone_signal_strength=moderate +power_save +wifi_running +wifi +usb_data wifi_signal_strength=4 wifi_suppl=completed +ble_scan
+                    0 (2) 088 fg=u0a194:"com.sec.android.app.shealth"
+                    0 (2) 088 top=u0a178:"com.google.android.youtube"
+                    0 (2) 088 job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+                    0 (2) 088 job=u0a178:"com.google.android.youtube/com.google.android.libraries.youtube.account.service.AccountsChangedJobIntentService"
+                    0 (2) 088 user=0:"0"
+                    0 (2) 088 user=150:"150"
+                    0 (2) 088 userfg=0:"0"
+                 +1ms (2) 088 stats=0:"wakelock-change"
+                +27ms (2) 088 stats=0:"dump"
+                +74ms (4) 088 current=839 ap_temp=34 pst_temp=32 bat_temp=28 chg_temp=32 pa_temp=30 -job=u0a178:"com.google.android.youtube/com.google.android.libraries.youtube.account.service.AccountsChangedJobIntentService"
+             +1s292ms (2) 088 pkgactive=u0a197:"com.google.vr.vrcore"
+             +1s335ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +1s337ms (2) 088 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +1s337ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +1s343ms (2) 088 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +2s049ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +2s056ms (2) 088 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +2s059ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +2s718ms (2) 088 +job=u0a197:"com.google.vr.vrcore/.phenotype.PhenotypeUpdateService"
+             +2s722ms (2) 088 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +3s026ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +3s053ms (2) 088 -job=u0a197:"com.google.vr.vrcore/.phenotype.PhenotypeUpdateService"
+             +3s635ms (2) 088 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +3s824ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+             +4s338ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.common.stats.AvailabilityFilesCleanupTask"
+             +4s339ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.common.stats.AvailabilityFilesCleanupTask"
+             +5s627ms (3) 088 +audio pkgactive=u0a141:"com.samsung.android.sm.policy"
+             +7s260ms (2) 088 -audio
+             +9s205ms (2) 088 +audio
+            +10s147ms (3) 088 current=807 ap_temp=36 pst_temp=32 bat_temp=28 chg_temp=34 pa_temp=31
+            +20s210ms (3) 088 current=814 ap_temp=35 pst_temp=33 bat_temp=28 chg_temp=33 pa_temp=31
+            +30s284ms (3) 088 current=819 ap_temp=34 pst_temp=33 bat_temp=28 chg_temp=33 pa_temp=31
+            +47s763ms (2) 088 +job=5009:"com.samsung.android.scloud/com.samsung.android.sdk.smp.SmpJobService"
+            +48s164ms (2) 088 -job=5009:"com.samsung.android.scloud/com.samsung.android.sdk.smp.SmpJobService"
+            +49s850ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator"
+            +50s059ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.auth.blockstore.service.cloudsync.CloudSyncBackupTaskService"
+            +50s432ms (3) 088 current=815 ap_temp=34 pst_temp=33 bat_temp=28 chg_temp=33 pa_temp=31
+            +51s838ms (2) 088 -audio
+            +54s258ms (2) 088 +audio
+          +1m00s481ms (2) 088 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +1m00s502ms (4) 088 current=804 ap_temp=35 pst_temp=33 bat_temp=28 chg_temp=33 pa_temp=31 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +1m02s471ms (2) 088 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +1m02s633ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +1m06s686ms (2) 088 stats=0:"get-stats"
+          +1m07s116ms (2) 088 +job=5009:"media/com.osp.app.signin/eM_ADDR:android"
+          +1m07s144ms (2) 088 +sync=5009:"media/com.osp.app.signin/eM_ADDR"
+          +1m10s057ms (2) 088 -job=5009:"media/com.osp.app.signin/eM_ADDR:android"
+          +1m10s060ms (2) 088 -sync=5009:"media/com.osp.app.signin/eM_ADDR"
+          +1m20s715ms (3) 088 current=802 ap_temp=34 pst_temp=33 bat_temp=28 chg_temp=33 pa_temp=31
+          +1m30s791ms (3) 088 current=796 ap_temp=34 pst_temp=34 bat_temp=28 chg_temp=33 pa_temp=31
+          +1m40s857ms (3) 088 current=792 ap_temp=34 pst_temp=34 bat_temp=28 chg_temp=33 pa_temp=31
+          +1m47s150ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator"
+          +1m48s597ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.auth.blockstore.service.cloudsync.CloudSyncBackupTaskService"
+          +1m48s604ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator"
+          +1m50s929ms (3) 088 current=788 ap_temp=34 pst_temp=34 bat_temp=28 chg_temp=33 pa_temp=31
+          +1m54s262ms (2) 088 +longwake=u0a178:"AudioMix"
+          +1m58s468ms (2) 088 +job=u0a90:"com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService"
+          +2m00s005ms (2) 088 -job=u0a90:"com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService"
+          +2m00s310ms (2) 088 +job=u0a90:"com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService"
+          +2m01s003ms (4) 088 current=784 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31 -job=u0a90:"com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService"
+          +2m05s200ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator"
+          +2m11s082ms (3) 088 current=779 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=32
+          +2m14s343ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.common.stats.AvailabilityFilesCleanupTask"
+          +2m14s343ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.common.stats.AvailabilityFilesCleanupTask"
+          +2m21s151ms (3) 088 current=776 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+          +2m27s068ms (1) 088 wifi_signal_strength=3
+          +2m28s081ms (1) 088 wifi_signal_strength=4
+          +2m29s352ms (2) 088 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +2m29s500ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+          +2m31s222ms (3) 088 current=771 ap_temp=34 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=31
+          +2m41s291ms (3) 088 current=767 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+          +2m51s359ms (3) 088 current=760 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+          +3m01s457ms (4) 088 current=755 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31 pkgactive=u0a22:"com.samsung.android.app.spage"
+          +3m05s325ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+          +3m05s326ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+          +3m05s376ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+          +3m05s376ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+          +3m11s583ms (3) 088 current=750 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=32
+          +3m21s652ms (3) 088 current=746 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+          +3m31s731ms (3) 088 current=742 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=34 pa_temp=32
+          +3m41s797ms (3) 088 current=736 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=32
+          +3m51s872ms (3) 088 current=732 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+          +4m01s947ms (3) 088 current=728 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+          +4m05s603ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.auth.account.be.accountstate.GcmTaskService"
+          +4m05s603ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.auth.account.be.accountstate.GcmTaskService"
+          +4m05s687ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.security.snet.SnetNormalTaskService"
+          +4m05s688ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.security.snet.SnetNormalTaskService"
+          +4m11s982ms (3) 088 current=723 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +4m22s054ms (4) 088 current=718 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32 phone_signal_strength=poor
+          +4m30s515ms (2) 088 phone_signal_strength=none
+          +4m32s124ms (3) 088 current=713 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+          +4m42s195ms (3) 088 current=708 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +4m45s870ms (2) 088 phone_signal_strength=poor
+          +4m52s269ms (3) 088 current=704 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +4m55s539ms (2) 088 phone_signal_strength=moderate
+          +4m59s524ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.auth.account.be.accountstate.GcmTaskService"
+          +4m59s525ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.auth.account.be.accountstate.GcmTaskService"
+          +5m02s349ms (3) 088 current=701 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +5m12s425ms (3) 088 current=695 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +5m22s500ms (3) 088 current=690 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +5m32s566ms (3) 088 current=688 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +5m42s650ms (3) 088 current=682 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +5m52s720ms (3) 088 current=677 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +5m59s661ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.mdisync.service.MdiSyncBackgroundTaskService"
+          +5m59s662ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.mdisync.service.MdiSyncBackgroundTaskService"
+          +5m59s703ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+          +6m00s431ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.security.snet.SnetNormalTaskService"
+          +6m00s431ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.security.snet.SnetNormalTaskService"
+          +6m02s794ms (3) 088 current=673 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +6m12s871ms (3) 088 current=668 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +6m22s947ms (3) 088 current=664 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +6m33s015ms (3) 088 current=658 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +6m43s084ms (3) 088 current=654 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +6m53s149ms (3) 088 current=650 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +7m00s464ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+          +7m00s493ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.mdisync.service.MdiSyncBackgroundTaskService"
+          +7m00s494ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.mdisync.service.MdiSyncBackgroundTaskService"
+          +7m00s629ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.threadnetwork.service.firstparty.BorderRouterSyncBoundService"
+          +7m00s630ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.threadnetwork.service.firstparty.BorderRouterSyncBoundService"
+          +7m03s226ms (3) 088 current=646 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +7m13s297ms (3) 088 current=642 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +7m23s371ms (3) 088 current=637 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +7m27s467ms (1) 088 wifi_signal_strength=3
+          +7m28s483ms (1) 088 wifi_signal_strength=4
+          +7m33s438ms (3) 088 current=632 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +7m43s550ms (3) 088 current=627 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +7m53s630ms (3) 088 current=622 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +8m00s615ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.checkin.EventLogService"
+          +8m00s906ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.mdi.download.service.MddGcmTaskService"
+          +8m00s907ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.mdi.download.service.MddGcmTaskService"
+          +8m01s409ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.checkin.EventLogService"
+          +8m03s706ms (3) 088 current=619 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +8m13s787ms (3) 088 current=615 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +8m23s849ms (3) 088 current=610 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +8m33s921ms (3) 088 current=604 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +8m43s997ms (3) 088 current=600 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+          +8m52s921ms (2) 088 +tmpwhitelist=u0a50:"broadcast:u0a50:com.sec.spp.push.ACTION_CONNECTION_STATE_CHECK"
+          +8m54s079ms (3) 088 current=595 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +9m02s928ms (2) 088 -tmpwhitelist=u0a50:"broadcast:u0a50:com.sec.spp.push.ACTION_CONNECTION_STATE_CHECK"
+          +9m04s163ms (3) 088 current=589 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+          +9m10s636ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.threadnetwork.service.firstparty.BorderRouterSyncBoundService"
+          +9m10s636ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.threadnetwork.service.firstparty.BorderRouterSyncBoundService"
+          +9m14s235ms (3) 088 current=586 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +9m24s307ms (3) 088 current=582 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +9m34s384ms (3) 088 current=577 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +9m38s639ms (2) 088 wifi_signal_strength=3 +job=5009:"media/com.osp.app.signin/eM_ADDR:android"
+          +9m39s283ms (2) 088 wifi_signal_strength=4 +sync=5009:"media/com.osp.app.signin/eM_ADDR"
+          +9m41s859ms (2) 088 -job=5009:"media/com.osp.app.signin/eM_ADDR:android"
+          +9m41s925ms (2) 088 -sync=5009:"media/com.osp.app.signin/eM_ADDR"
+          +9m44s508ms (3) 088 current=573 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +9m54s586ms (3) 088 current=569 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+          +9m55s944ms (2) 088 phone_signal_strength=poor
+         +10m04s661ms (3) 088 current=564 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +10m08s909ms (2) 088 +job=u0a293:"com.samsung.android.mobileservice/.social.buddy.service.jobservice.PollingJobService"
+         +10m10s795ms (2) 088 -job=u0a293:"com.samsung.android.mobileservice/.social.buddy.service.jobservice.PollingJobService"
+         +10m10s926ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.mdi.download.service.MddGcmTaskService"
+         +10m10s926ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.mdi.download.service.MddGcmTaskService"
+         +10m14s741ms (3) 088 current=562 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +10m19s730ms (2) 088 +job=u0a194:"com.sec.android.app.shealth.datastore/com.osp.app.signin/eM_ADDR:android"
+         +10m19s792ms (2) 088 +sync=u0a194:"com.sec.android.app.shealth.datastore/com.osp.app.signin/eM_ADDR"
+         +10m21s899ms (2) 088 -job=u0a194:"com.sec.android.app.shealth.datastore/com.osp.app.signin/eM_ADDR:android"
+         +10m21s910ms (2) 088 -sync=u0a194:"com.sec.android.app.shealth.datastore/com.osp.app.signin/eM_ADDR"
+         +10m24s841ms (3) 088 current=558 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +10m34s918ms (3) 088 current=555 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +10m43s603ms (2) 088 +tmpwhitelist=u0a198:"broadcast:u0a198:a.ACTION_INEXACT_ALARM.PreloadedFBNS.com.facebook.services"
+         +10m43s706ms (2) 088 +tmpwhitelist=u0a113:"fbns"
+         +10m43s718ms (2) 088 +job=u0a113:"com.facebook.katana/androidx.work.impl.background.systemjob.SystemJobService"
+         +10m45s021ms (3) 088 current=549 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +10m46s705ms (2) 088 -job=u0a113:"com.facebook.katana/androidx.work.impl.background.systemjob.SystemJobService"
+         +10m46s738ms (2) 088 +job=u0a113:"com.facebook.katana/androidx.work.impl.background.systemjob.SystemJobService"
+         +10m47s003ms (2) 088 -job=u0a113:"com.facebook.katana/androidx.work.impl.background.systemjob.SystemJobService"
+         +10m47s046ms (2) 088 +job=u0a113:"com.facebook.katana/androidx.work.impl.background.systemjob.SystemJobService"
+         +10m51s861ms (2) 088 phone_signal_strength=none
+         +10m53s634ms (2) 088 -tmpwhitelist=u0a198:"broadcast:u0a198:a.ACTION_INEXACT_ALARM.PreloadedFBNS.com.facebook.services"
+         +10m53s716ms (2) 088 -tmpwhitelist=u0a113:"fbns"
+         +10m55s090ms (3) 088 current=546 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +11m05s177ms (3) 088 current=541 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +11m15s264ms (3) 088 current=539 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +11m25s355ms (3) 088 current=535 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +11m35s421ms (3) 088 current=532 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +11m43s788ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.mdi.download.service.MddGcmTaskService"
+         +11m43s789ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.mdi.download.service.MddGcmTaskService"
+         +11m45s492ms (3) 088 current=529 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +11m47s051ms (2) 088 +longwake=u0a113:"*job*/com.facebook.katana/androidx.work.impl.background.systemjob.SystemJobService"
+         +11m54s373ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.mdi.download.service.MddGcmTaskService"
+         +11m54s374ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.mdi.download.service.MddGcmTaskService"
+         +11m55s567ms (3) 088 current=526 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +12m02s842ms (1) 088 wifi_signal_strength=3
+         +12m03s848ms (1) 088 wifi_signal_strength=4
+         +12m05s640ms (4) 088 current=522 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33 pkgactive=u0a4:"com.sec.android.provider.badge"
+         +12m06s439ms (2) 088 -job=u0a113:"com.facebook.katana/androidx.work.impl.background.systemjob.SystemJobService"
+         +12m06s441ms (2) 088 -longwake=u0a113:"*job*/com.facebook.katana/androidx.work.impl.background.systemjob.SystemJobService"
+         +12m06s495ms (2) 088 +job=u0a194:"com.sec.android.app.shealth.datastore/com.osp.app.signin/eM_ADDR:android"
+         +12m06s530ms (2) 088 +sync=u0a194:"com.sec.android.app.shealth.datastore/com.osp.app.signin/eM_ADDR"
+         +12m06s969ms (2) 088 pkgactive=u150a4:"com.sec.android.provider.badge"
+         +12m08s650ms (2) 088 -job=u0a194:"com.sec.android.app.shealth.datastore/com.osp.app.signin/eM_ADDR:android"
+         +12m08s667ms (2) 088 +job=u0a116:"com.facebook.appmanager/com.facebook.oxygen.common.jobqueue.JobQueueService"
+         +12m08s678ms (2) 088 -sync=u0a194:"com.sec.android.app.shealth.datastore/com.osp.app.signin/eM_ADDR"
+         +12m15s725ms (3) 088 current=519 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +12m17s678ms (2) 088 -job=u0a116:"com.facebook.appmanager/com.facebook.oxygen.common.jobqueue.JobQueueService"
+         +12m17s692ms (2) 088 +job=u0a116:"com.facebook.appmanager/com.facebook.oxygen.appmanager.update.core.UpdateService"
+         +12m17s739ms (2) 088 -job=u0a116:"com.facebook.appmanager/com.facebook.oxygen.appmanager.update.core.UpdateService"
+         +12m25s807ms (3) 088 current=515 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +12m35s877ms (3) 088 current=511 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +12m36s908ms (2) 088 phone_signal_strength=poor
+         +12m45s950ms (3) 088 current=508 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +12m54s588ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+         +12m54s589ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+         +12m54s637ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.people.service.DeletedNullContactsCleanupService"
+         +12m54s637ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.people.service.DeletedNullContactsCleanupService"
+         +12m56s020ms (3) 088 current=505 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +13m05s057ms (3) 088 phone_signal_strength=moderate +longwake=1000:"*alarm*:android.intent.action.TIME_TICK"
+         +13m06s089ms (3) 088 current=502 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +13m09s578ms (2) 088 stats=0:"get-stats"
+         +13m09s903ms (2) 088 -longwake=1000:"*alarm*:android.intent.action.TIME_TICK"
+         +13m16s154ms (3) 088 current=499 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +13m25s459ms (2) 088 phone_signal_strength=poor
+         +13m26s233ms (3) 088 current=495 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +13m33s136ms (2) 088 phone_signal_strength=none
+         +13m36s357ms (3) 088 current=491 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +13m46s438ms (3) 088 current=488 ap_temp=37 pst_temp=36 bat_temp=29 chg_temp=35 pa_temp=33
+         +13m56s531ms (3) 088 current=486 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +13m59s417ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+         +13m59s417ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+         +14m06s611ms (3) 088 current=482 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +14m16s684ms (3) 088 current=478 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +14m26s760ms (3) 088 current=474 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +14m36s831ms (3) 088 current=470 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +14m41s580ms (2) 088 +longwake=u0a183:"*walarm*:com.msc.seclib.keepalive.action.ska.alarm"
+         +14m41s729ms (2) 088 -longwake=u0a183:"*walarm*:com.msc.seclib.keepalive.action.ska.alarm"
+         +14m46s904ms (3) 088 current=467 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +14m56s967ms (3) 088 current=465 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +14m59s614ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.gass.chimera.SchedulePeriodicTasksService"
+         +14m59s615ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.gass.chimera.SchedulePeriodicTasksService"
+         +15m00s514ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.gass.chimera.SchedulePeriodicTasksService"
+         +15m00s515ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.gass.chimera.SchedulePeriodicTasksService"
+         +15m04s643ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.people.service.DeletedNullContactsCleanupService"
+         +15m04s643ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.people.service.DeletedNullContactsCleanupService"
+         +15m07s038ms (3) 088 current=464 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +15m17s112ms (3) 088 current=460 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +15m27s193ms (3) 088 current=457 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +15m37s262ms (3) 088 current=454 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +15m47s328ms (3) 088 current=451 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +15m57s407ms (3) 088 current=449 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +16m00s659ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.icing.mdh.service.MobileDataHubGcmTaskService"
+         +16m00s659ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.icing.mdh.service.MobileDataHubGcmTaskService"
+         +16m07s503ms (3) 088 current=446 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +16m17s574ms (3) 088 current=442 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +16m27s650ms (3) 088 current=439 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +16m37s766ms (3) 088 current=436 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +16m47s834ms (3) 088 current=434 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +16m57s901ms (3) 088 current=431 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +16m59s829ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+         +16m59s829ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+         +17m01s724ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+         +17m01s725ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.clearcut.uploader.QosUploaderService"
+         +17m05s088ms (2) 088 +longwake=u0a81:"*alarm*:com.samsung.action.EVERY_MINUTE_CLOCK_UPDATE"
+         +17m07s102ms (2) 088 -longwake=u0a81:"*alarm*:com.samsung.action.EVERY_MINUTE_CLOCK_UPDATE"
+         +17m07s972ms (3) 088 current=428 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +17m18s047ms (3) 088 current=425 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +17m28s128ms (3) 088 current=422 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +17m38s198ms (3) 088 current=420 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +17m48s267ms (3) 088 current=418 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +17m53s272ms (2) 088 +tmpwhitelist=u0a50:"broadcast:u0a50:com.sec.spp.push.ACTION_SEND_PING_MESSAGE"
+         +17m58s335ms (3) 088 current=416 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +18m01s852ms (2) 088 +longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.telephonyspam.sync.SpamListSyncTaskService"
+         +18m01s853ms (2) 088 +longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.telephonyspam.sync.SpamListSyncTaskService"
+         +18m02s913ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.telephonyspam.sync.SpamListSyncTaskService"
+         +18m02s914ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.telephonyspam.sync.SpamListSyncTaskService"
+         +18m03s283ms (2) 088 -tmpwhitelist=u0a50:"broadcast:u0a50:com.sec.spp.push.ACTION_SEND_PING_MESSAGE"
+         +18m08s406ms (3) 088 current=411 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +18m10s662ms (2) 088 -longwake=u150a26:"*gms_scheduler*/com.google.android.gms/.icing.mdh.service.MobileDataHubGcmTaskService"
+         +18m10s663ms (2) 088 -longwake=u0a26:"*gms_scheduler*/com.google.android.gms/.icing.mdh.service.MobileDataHubGcmTaskService"
+         +18m18s507ms (3) 088 current=408 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +18m28s585ms (3) 088 current=407 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +18m38s666ms (3) 088 current=404 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +18m48s732ms (3) 088 current=400 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +18m58s807ms (5) 088 current=398 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33 -audio -longwake=u0a178:"AudioMix"
+         +19m01s658ms (3) 088 +audio pkgactive=u0a73:"com.sec.android.app.soundalive"
+         +19m05s032ms (2) 088 pkgactive=u0a26:"com.google.android.gsf"
+         +19m08s879ms (3) 088 current=396 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +19m18s950ms (3) 088 current=393 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +19m29s017ms (3) 088 current=391 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +19m39s115ms (3) 088 current=388 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +19m49s190ms (3) 088 current=385 ap_temp=36 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +19m59s262ms (4) 088 current=381 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32 +job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+         +19m59s771ms (2) 088 -job=u0a178:"com.google.android.youtube/androidx.work.impl.background.systemjob.SystemJobService"
+         +20m01s659ms (2) 088 +longwake=u0a178:"AudioMix"
+         +20m02s892ms (2) 088 +longwake=u0a26:"*alarm*"
+         +20m04s218ms (2) 088 +tmpwhitelist=u0a26:"broadcast:u0a26:com.google.android.gms.gcm.HEARTBEAT_ALARM"
+         +20m04s226ms (2) 088 -longwake=u0a26:"*alarm*"
+         +20m09s325ms (3) 088 current=378 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +20m14s229ms (2) 088 -tmpwhitelist=u0a26:"broadcast:u0a26:com.google.android.gms.gcm.HEARTBEAT_ALARM"
+         +20m19s431ms (4) 088 current=376 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32 phone_signal_strength=poor
+         +20m29s514ms (3) 088 current=373 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +20m38s098ms (2) 088 phone_signal_strength=none
+         +20m39s606ms (3) 088 current=371 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=32
+         +20m49s674ms (3) 088 current=369 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +20m59s745ms (3) 088 current=367 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +21m09s820ms (3) 088 current=364 ap_temp=35 pst_temp=36 bat_temp=29 chg_temp=34 pa_temp=33
+         +21m19s898ms (3) 088 current=361 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+         +21m29s969ms (3) 088 current=358 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +21m37s059ms (2) 088 phone_signal_strength=poor
+         +21m40s045ms (3) 088 current=356 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+         +21m50s119ms (3) 088 current=353 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+         +22m00s188ms (3) 088 current=351 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +22m05s138ms (2) 088 phone_signal_strength=none
+         +22m10s249ms (3) 088 current=348 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +22m20s319ms (3) 088 current=347 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +22m30s389ms (3) 088 current=344 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=33
+         +22m40s481ms (3) 088 current=341 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +22m50s550ms (3) 088 current=338 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +23m00s602ms (3) 088 current=336 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +23m10s681ms (3) 088 current=334 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +23m20s753ms (3) 088 current=331 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +23m40s910ms (3) 088 current=327 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +23m50s986ms (3) 088 current=325 ap_temp=36 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=33
+         +24m01s051ms (3) 088 current=324 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=34 pa_temp=32
+         +24m09s896ms (2) 088 +longwake=u0a81:"*alarm*"
+         +24m11s119ms (3) 088 current=321 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +24m13s220ms (3) 088 phone_signal_strength=poor -longwake=u0a81:"*alarm*"
+         +24m13s255ms (2) 088 stats=0:"get-stats"
+         +24m21s195ms (3) 088 current=320 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +24m31s268ms (3) 088 current=318 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +24m38s821ms (2) 088 phone_signal_strength=moderate
+         +24m41s337ms (3) 088 current=315 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +24m51s403ms (3) 088 current=313 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +25m01s451ms (3) 088 current=312 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +25m11s519ms (3) 088 current=310 ap_temp=34 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +25m21s586ms (3) 088 current=308 ap_temp=34 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=31
+         +25m31s650ms (3) 088 current=306 ap_temp=34 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=31
+         +25m41s725ms (3) 088 current=304 ap_temp=35 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=31
+         +25m42s824ms (2) 088 phone_signal_strength=poor
+         +25m51s797ms (3) 088 current=303 ap_temp=34 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +26m00s741ms (2) 088 phone_signal_strength=moderate
+         +26m01s874ms (3) 088 current=300 ap_temp=34 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=32
+         +26m11s960ms (3) 088 current=293 ap_temp=34 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=31
+         +26m22s064ms (3) 088 current=295 ap_temp=34 pst_temp=35 bat_temp=29 chg_temp=33 pa_temp=31
+         +26m32s136ms (3) 088 current=293 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+         +26m40s202ms (2) 088 +job=5009:"media/com.osp.app.signin/eM_ADDR:android"
+         +26m40s228ms (2) 088 +sync=5009:"media/com.osp.app.signin/eM_ADDR"
+         +26m42s230ms (3) 088 current=291 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=32
+         +26m43s852ms (2) 088 -job=5009:"media/com.osp.app.signin/eM_ADDR:android"
+         +26m43s894ms (2) 088 -sync=5009:"media/com.osp.app.signin/eM_ADDR"
+         +26m52s307ms (3) 088 current=288 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=32
+         +27m02s366ms (3) 088 current=286 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+         +27m05s781ms (2) 088 +longwake=u0a81:"*alarm*:com.samsung.action.EVERY_MINUTE_CLOCK_UPDATE"
+         +27m09s291ms (2) 088 -longwake=u0a81:"*alarm*:com.samsung.action.EVERY_MINUTE_CLOCK_UPDATE"
+         +27m12s434ms (3) 088 current=285 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+         +27m22s503ms (3) 088 current=283 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+         +27m32s584ms (3) 088 current=282 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+         +27m38s406ms (2) 088 stats=0:"write"
+         +27m42s596ms (2) 088 +tmpwhitelist=u0a198:"broadcast:u0a198:a.ACTION_INEXACT_ALARM.PreloadedFBNS.com.facebook.services"
+         +27m42s684ms (3) 088 current=280 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+         +27m52s603ms (2) 088 -tmpwhitelist=u0a198:"broadcast:u0a198:a.ACTION_INEXACT_ALARM.PreloadedFBNS.com.facebook.services"
+         +27m52s766ms (3) 088 current=277 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+         +28m12s906ms (3) 088 current=273 ap_temp=34 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=31
+         +28m25s895ms (2) 088 -top=u0a178:"com.google.android.youtube"
+         +28m25s895ms (2) 088 +top=u0a81:"com.sec.android.app.launcher"
+         +28m26s217ms (3) 088 -audio -longwake=u0a178:"AudioMix"
+         +28m33s076ms (3) 088 current=270 ap_temp=35 pst_temp=34 bat_temp=29 chg_temp=33 pa_temp=32
+         +28m40s341ms (2) 088 stats=0:"dump"
+
+Total cpu time reads: 1
+Batched cpu time reads: 0
+Batching Duration (min): 870
+All UID cpu time reads since the later of device start or stats reset: 28
+UIDs removed since the later of device start or stats reset: 0
+KernelUidCpuTimeReader Exception :
+
+
+
+2022-10-27 18:08:35,682:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys batterystats | grep "Computed drain:"" returned: 
+    Capacity: 3000, Typical: 0, Computed drain: 197, actual drain: 0
+
+2022-10-27 18:08:35,922:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys batterystats | grep "volt="" returned: 
+                    0 (1) 088 status=charging health=good plug=none temp=283 volt=4310 current=845 ap_temp=32 pst_temp=32 bat_temp=28 chg_temp=31 pa_temp=30 -tx_share misc_event=65536 online=19 current_event=0 charge=2622 +running +wake_lock +wifi_multicast +wifi_radio +screen phone_state=emergency phone_signal_strength=moderate +power_save +wifi_running +wifi +usb_data wifi_signal_strength=4 wifi_suppl=completed +ble_scan
+
+2022-10-27 18:08:37,195:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "cat /proc/cpuinfo | grep processor | wc -l" returned: 
+8
+
+2022-10-27 18:08:37,272:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 18:09:29,485:INFO:NativeExperiment:Sleeping for 60000 milliseconds
+2022-10-27 18:10:29,662:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "pm list packages" returned: 
+package:com.mobeam.barcodeService
+package:com.samsung.android.provider.filterprovider
+package:com.monotype.android.font.rosemary
+package:com.sec.android.app.DataCreate
+package:com.samsung.android.app.ledcoverdream
+package:com.android.cts.priv.ctsshim
+package:com.samsung.android.gearoplugin
+package:com.gd.mobicore.pa
+package:com.sec.android.widgetapp.samsungapps
+package:com.samsung.android.smartswitchassistant
+package:com.sec.vsim.ericssonnsds.webapp
+package:com.sec.android.app.setupwizardlegalprovider
+package:com.google.android.youtube
+package:com.samsung.android.app.galaxyfinder
+package:com.sec.location.nsflp2
+package:com.samsung.android.themestore
+package:com.sec.android.app.chromecustomizations
+package:com.samsung.android.app.aodservice
+package:com.samsung.android.app.cocktailbarservice
+package:com.android.internal.display.cutout.emulation.corner
+package:com.google.android.ext.services
+package:com.sec.android.app.suwscriptplayer
+package:com.android.internal.display.cutout.emulation.double
+package:com.android.providers.telephony
+package:com.sec.android.app.parser
+package:com.samsung.svoice.sync
+package:com.google.android.googlequicksearchbox
+package:com.samsung.android.calendar
+package:com.samsung.android.timezone.updater
+package:com.android.providers.calendar
+package:com.utorrent.client
+package:com.osp.app.signin
+package:com.samsung.clipboardsaveservice
+package:com.sec.automation
+package:com.android.providers.media
+package:com.samsung.android.app.social
+package:com.google.android.onetimeinitializer
+package:com.expressvpn.vpn
+package:com.sec.android.mimage.gear360editor
+package:com.google.android.ext.shared
+package:com.samsung.android.spdclient
+package:com.android.wallpapercropper
+package:com.teslacoilsw.launcher
+package:com.samsung.android.wallpaper.res
+package:com.samsung.android.smartmirroring
+package:com.skms.android.agent
+package:com.sec.android.desktopcommunity
+package:com.sec.android.app.safetyassurance
+package:com.samsung.gpudriver.S8MaliG71_90
+package:com.samsung.android.incallui
+package:com.samsung.android.knox.containercore
+package:com.samsung.android.kidsinstaller
+package:com.sec.factory.camera
+package:com.sec.vsimservice
+package:com.sec.usbsettings
+package:com.samsung.accessory.beansmgr
+package:com.samsung.android.easysetup
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.sec.android.easyonehand
+package:com.sec.factory
+package:com.samsung.android.provider.stickerprovider
+package:com.android.htmlviewer
+package:com.samsung.android.app.sbrowseredge
+package:com.android.companiondevicemanager
+package:com.android.mms.service
+package:com.samsung.android.rubin.app
+package:com.sec.android.wallpapercropper2
+package:com.android.providers.downloads
+package:com.diotek.sec.lookup.dictionary
+package:com.sec.android.cover.ledcover
+package:com.sec.android.easyMover.Agent
+package:com.samsung.ucs.agent.boot
+package:com.samsung.accessory.safiletransfer
+package:com.wsomacp
+package:com.samsung.faceservice
+package:com.sec.android.app.voicenote
+package:com.monotype.android.font.foundation
+package:com.sec.android.widgetapp.easymodecontactswidget
+package:com.samsung.android.email.provider
+package:com.samsung.android.MtpApplication
+package:com.sec.android.app.factorykeystring
+package:com.sec.android.app.samsungapps
+package:com.sec.android.emergencymode.service
+package:com.tplink.tether
+package:com.google.android.configupdater
+package:com.sec.android.app.wlantest
+package:com.microsoft.office.excel
+package:com.samsung.android.app.camera.sticker.facear.preload
+package:com.samsung.android.app.settings.bixby
+package:com.sec.android.app.billing
+package:com.samsung.android.app.selfmotionpanoramaviewer
+package:com.sec.epdgtestapp
+package:com.samsung.android.timezone.data_P
+package:com.samsung.android.game.gamehome
+package:com.sec.android.app.desktoplauncher
+package:com.android.defcontainer
+package:com.samsung.android.widgetapp.yahooedge.finance
+package:com.sec.android.daemonapp
+package:com.samsung.daydream.customization
+package:com.google.ar.core
+package:com.sec.ims
+package:com.sec.sve
+package:com.sec.enterprise.knox.attestation
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.simappdialog
+package:com.samsung.systemui.bixby2
+package:com.dsi.ant.service.socket
+package:com.sec.android.AutoPreconfig
+package:com.microsoft.skydrive
+package:com.samsung.android.SettingsReceiver
+package:com.android.internal.display.cutout.emulation.tall
+package:com.sec.android.app.soundalive
+package:com.sec.android.providers.security
+package:com.sec.android.provider.badge
+package:com.android.certinstaller
+package:de.axelspringer.yana.zeropage
+package:com.samsung.android.securitylogagent
+package:com.android.carrierconfig
+package:com.samsung.android.app.watchmanager
+package:com.samsung.android.knox.containeragent
+package:com.reddit.frontpage
+package:com.samsung.android.app.assistantmenu
+package:com.candl.chronos
+package:com.samsung.SMT
+package:com.samsung.cmh
+package:com.samsung.mlp
+package:com.samsung.rcs
+package:com.sec.android.ofviewer
+package:com.sec.factory.iris.usercamera
+package:com.samsung.android.drivelink.stub
+package:android
+package:com.android.hotwordenrollment.xgoogle
+package:com.samsung.android.sm.devicesecurity
+package:com.dsi.ant.sample.acquirechannels
+package:com.samsung.android.net.wifi.wifiguider
+package:com.samsung.android.bixby.service
+package:com.samsung.android.smartface
+package:com.android.egg
+package:com.android.mtp
+package:com.android.nfc
+package:com.android.stk
+package:com.samsung.android.messaging
+package:com.samsung.android.emojiupdater
+package:com.android.backupconfirm
+package:com.samsung.android.widgetapp.yahooedge.sport
+package:com.samsung.klmsagent
+package:com.instagram.android
+package:com.samsung.android.smartfitting
+package:com.sec.android.app.SecSetupWizard
+package:com.pinterest
+package:com.samsung.android.app.telephonyui
+package:com.samsung.android.samsungpositioning
+package:com.android.statementservice
+package:com.google.android.gm
+package:com.samsung.android.bixby.agent
+package:com.google.android.apps.tachyon
+package:com.sec.android.app.hwmoduletest
+package:com.android.settings.intelligence
+package:com.sec.bcservice
+package:org.chromium.webapk.a69ab1c52e5d4ce5d
+package:com.sec.modem.settings
+package:com.samsung.android.server.iris
+package:com.android.systemui.theme.dark
+package:com.samsung.android.providers.context
+package:com.sec.android.app.servicemodeapp
+package:com.sec.android.preloadinstaller
+package:com.sec.android.uibcvirtualsoftkey
+package:com.google.android.setupwizard
+package:com.sec.android.gallery3d
+package:com.android.providers.settings
+package:com.samsung.accessibility
+package:com.sec.imsservice
+package:com.android.sharedstoragebackup
+package:com.facebook.services
+package:com.google.android.music
+package:com.samsung.android.mobileservice
+package:com.android.printspooler
+package:com.android.hotwordenrollment.okgoogle
+package:com.samsung.android.hmt.vrsvc
+package:com.samsung.android.bixby.es.globalaction
+package:com.samsung.storyservice
+package:com.android.dreams.basic
+package:com.sec.android.app.music
+package:com.android.se
+package:com.android.inputdevices
+package:com.samsung.android.kgclient
+package:com.samsung.knox.securefolder
+package:com.samsung.android.app.talkback
+package:com.android.bips
+package:com.android.stk2
+package:com.samsung.android.game.gametools
+package:com.samsung.desktopsystemui
+package:com.samsung.android.app.simplesharing
+package:com.samsung.android.service.peoplestripe
+package:com.samsung.android.da.daagent
+package:com.sec.android.watchweb
+package:com.samsung.android.brightnessbackupservice
+package:com.samsung.android.app.reminder
+package:com.twitter.android
+package:com.samsung.app.slowmotion
+package:com.samsung.android.timezone.autoupdate_O
+package:com.samsung.android.smartcallprovider
+package:com.samsung.android.app.smartcapture
+package:com.sec.android.desktopmode.uiservice
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.dsi.ant.plugins.antplus
+package:com.samsung.android.app.taskedge
+package:com.microsoft.office.word
+package:com.samsung.advp.imssettings
+package:com.samsung.android.location
+package:com.sec.android.inputmethod
+package:com.samsung.android.app.advsounddetector
+package:com.teslacoilsw.launcher.prime
+package:com.sec.android.app.clockpackage
+package:com.sec.android.RilServiceModeApp
+package:com.google.android.webview
+package:com.samsung.android.mdecservice
+package:com.sec.android.app.simsettingmgr
+package:com.microsoft.office.powerpoint
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.samsung.crane
+package:com.sec.imslogger
+package:com.samsung.android.clipboarduiservice
+package:com.android.keychain
+package:com.android.chrome
+package:com.samsung.android.ipsgeofence
+package:com.samsung.android.themecenter
+package:com.google.android.packageinstaller
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tts
+package:android.autoinstalls.config.samsung
+package:com.android.calllogbackup
+package:com.google.android.partnersetup
+package:com.samsung.android.spdfnote
+package:com.sec.android.diagmonagent
+package:com.samsung.android.knox.containerdesktop
+package:com.google.android.videos
+package:com.mindesigns.zwskin.min
+package:com.sec.spp.push
+package:com.android.carrierdefaultapp
+package:com.dsi.ant.server
+package:com.sec.android.app.myfiles
+package:com.android.proxyhandler
+package:com.samsung.android.allshare.service.fileshare
+package:com.sec.android.mimage.photoretouching
+package:com.sec.android.app.launcher
+package:com.samsung.android.universalswitch
+package:com.zhiliaoapp.musically
+package:com.sec.android.app.apex
+package:com.flickr.android
+package:com.google.android.feedback
+package:com.google.android.printservice.recommendation
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.google.android.syncadapters.calendar
+package:com.android.managedprovisioning
+package:com.samsung.android.setting.multisound
+package:com.samsung.visionprovider
+package:com.samsung.android.authfw
+package:com.sec.android.app.sbrowser
+package:com.monotype.android.font.chococooky
+package:com.android.dreams.phototable
+package:com.sec.android.service.health
+package:com.samsung.safetyinformation
+package:com.samsung.android.dialer
+package:com.facebook.katana
+package:com.samsung.android.dqagent
+package:com.samsung.app.highlightplayer
+package:com.sec.android.app.ringtoneBR
+package:com.samsung.android.game.gos
+package:com.sec.android.app.vepreload
+package:com.android.providers.partnerbookmarks
+package:com.sem.factoryapp
+package:com.samsung.android.keyguardwallpaperupdator
+package:com.trustonic.teeservice
+package:com.android.wallpaper.livepicker
+package:com.samsung.android.beaconmanager
+package:com.sec.enterprise.mdm.services.simpin
+package:com.android.apps.tag
+package:com.samsung.android.stickercenter
+package:com.facebook.system
+package:com.samsung.android.oneconnect
+package:com.sec.android.app.popupcalculator
+package:com.sec.android.soagent
+package:com.google.android.gms.policy_sidecar_aps
+package:com.sec.android.app.quicktool
+package:com.samsung.android.fmm
+package:com.samsung.android.mdm
+package:com.samsung.android.rlc
+package:com.samsung.android.voc
+package:com.sec.android.app.shealth
+package:com.sec.unifiedwfc
+package:com.sec.phone
+package:com.samsung.android.bixby.wakeup
+package:com.samsung.accessory
+package:com.google.android.backuptransport
+package:com.samsung.android.app.interactivepanoramaviewer
+package:com.samsung.android.samsungpass
+package:com.samsung.android.bixby.plmsync
+package:com.android.storagemanager
+package:com.samsung.android.scloud
+package:com.samsung.android.app.soundpicker
+package:com.sec.app.RilErrorNotifier
+package:com.samsung.android.spayfw
+package:com.samsung.android.ststub
+package:com.android.bookmarkprovider
+package:com.linkedin.android
+package:com.android.settings
+package:com.samsung.app.newtrim
+package:fm.anchor.android
+package:com.samsung.android.dsms
+package:com.samsung.android.lool
+package:com.samsung.android.app.notes
+package:com.sec.android.app.bluetoothtest
+package:com.sec.android.sdhms
+package:com.samsung.android.app.spage
+package:com.incorporateapps.fakegps.fre
+package:com.samsung.android.knox.analytics.uploader
+package:com.samsung.android.sm.policy
+package:com.sec.android.emergencylauncher
+package:com.tumblr
+package:com.sec.hearingadjust
+package:com.sec.android.easyMover
+package:com.google.android.apps.turbo
+package:com.fastemulator.gbafree
+package:com.samsung.android.bluelightfilter
+package:com.samsung.android.bbc.bbcagent
+package:com.samsung.android.visionintelligence
+package:com.knox.vpn.proxyhandler
+package:com.android.cts.ctsshim
+package:com.sec.android.splitsound
+package:com.samsung.android.app.watchmanagerstub
+package:com.samsung.android.svcagent
+package:com.samsung.android.mateagent
+package:com.samsung.android.networkdiagnostic
+package:com.enhance.gameservice
+package:com.samsung.android.shortcutbackupservice
+package:com.android.vpndialogs
+package:com.samsung.ucs.agent.ese
+package:com.android.phone
+package:com.google.vr.vrcore
+package:com.android.shell
+package:com.android.wallpaperbackup
+package:com.android.providers.blockednumber
+package:com.samsung.android.app.omcagent
+package:com.hiya.star
+package:com.android.providers.userdictionary
+package:com.sec.enterprise.knox.cloudmdm.smdms
+package:com.samsung.android.app.camera.sticker.stamp.preload
+package:com.android.emergency
+package:com.wssyncmldm
+package:com.samsung.ims.smk
+package:com.android.location.fused
+package:com.samsung.android.app.appsedge
+package:com.samsung.android.samsungpassautofill
+package:com.sec.epdg
+package:com.android.systemui
+package:com.sec.android.app.personalization
+package:com.monotype.android.font.cooljazz
+package:com.android.bluetoothmidiservice
+package:com.samsung.android.sdk.handwriting
+package:com.facebook.appmanager
+package:com.samsung.aasaservice
+package:com.samsung.systemui.hidenotch
+package:com.android.traceur
+package:com.samsung.android.allshare.service.mediashare
+package:com.sec.android.provider.emergencymode
+package:com.google.android.play.games
+package:com.sec.android.app.applinker
+package:com.sec.android.app.camera
+package:com.android.bluetooth
+package:com.samsung.android.contacts
+package:com.samsung.android.app.clipboardedge
+package:com.android.providers.contacts
+package:com.samsung.ipservice
+package:com.sec.android.app.magnifier
+package:com.sec.android.widgetapp.webmanual
+package:com.samsung.sec.android.application.csc
+package:com.android.captiveportallogin
+package:com.samsung.android.app.motionpanoramaviewer
+package:com.samsung.android.bio.face.service
+package:com.samsung.android.bixby.agent.dummy
+package:com.samsung.android.video
+package:com.google.android.apps.restore
+
+2022-10-27 18:10:29,663:INFO:Profilers:Start subject aggregation
+2022-10-27 18:10:29,663:DEBUG:PluginHandler:%s: aggregating subject results
+2022-10-27 18:10:29,665:INFO:NativeExperiment:Experiment completed, start cleanup
+2022-10-27 18:10:29,727:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 18:10:29,791:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 18:10:29,792:DEBUG:Scripts:Running hook after_experiment on device samsung (ce0517150d4a122003, Android 9, API level 28)
+args: ()
+kwargs: {}
+2022-10-27 18:10:29,798:INFO:Python3:after_experiment.py
+2022-10-27 18:10:29,799:DEBUG:Python3:after_experiment.py returned None
+2022-10-27 18:10:29,894:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "dumpsys battery reset" returned: 
+
+2022-10-27 18:10:29,895:INFO:Profilers:Stop profiling
+2022-10-27 18:10:29,963:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 18:10:30,031:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 18:10:30,031:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Stop profiling
+2022-10-27 18:10:31,423:INFO:Profilers:Unloading
+2022-10-27 18:10:31,493:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.release" returned: 
+9
+
+2022-10-27 18:10:31,562:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "getprop ro.build.version.sdk" returned: 
+28
+
+2022-10-27 18:10:31,562:DEBUG:PluginHandler:Batterystats: samsung (ce0517150d4a122003, Android 9, API level 28): Cleanup
+2022-10-27 18:10:31,758:DEBUG:AndroidRunner.Adb:ce0517150d4a122003: "pm list packages" returned: 
+package:com.mobeam.barcodeService
+package:com.samsung.android.provider.filterprovider
+package:com.monotype.android.font.rosemary
+package:com.sec.android.app.DataCreate
+package:com.samsung.android.app.ledcoverdream
+package:com.android.cts.priv.ctsshim
+package:com.samsung.android.gearoplugin
+package:com.gd.mobicore.pa
+package:com.sec.android.widgetapp.samsungapps
+package:com.samsung.android.smartswitchassistant
+package:com.sec.vsim.ericssonnsds.webapp
+package:com.sec.android.app.setupwizardlegalprovider
+package:com.google.android.youtube
+package:com.samsung.android.app.galaxyfinder
+package:com.sec.location.nsflp2
+package:com.samsung.android.themestore
+package:com.sec.android.app.chromecustomizations
+package:com.samsung.android.app.aodservice
+package:com.samsung.android.app.cocktailbarservice
+package:com.android.internal.display.cutout.emulation.corner
+package:com.google.android.ext.services
+package:com.sec.android.app.suwscriptplayer
+package:com.android.internal.display.cutout.emulation.double
+package:com.android.providers.telephony
+package:com.sec.android.app.parser
+package:com.samsung.svoice.sync
+package:com.google.android.googlequicksearchbox
+package:com.samsung.android.calendar
+package:com.samsung.android.timezone.updater
+package:com.android.providers.calendar
+package:com.utorrent.client
+package:com.osp.app.signin
+package:com.samsung.clipboardsaveservice
+package:com.sec.automation
+package:com.android.providers.media
+package:com.samsung.android.app.social
+package:com.google.android.onetimeinitializer
+package:com.expressvpn.vpn
+package:com.sec.android.mimage.gear360editor
+package:com.google.android.ext.shared
+package:com.samsung.android.spdclient
+package:com.android.wallpapercropper
+package:com.teslacoilsw.launcher
+package:com.samsung.android.wallpaper.res
+package:com.samsung.android.smartmirroring
+package:com.skms.android.agent
+package:com.sec.android.desktopcommunity
+package:com.sec.android.app.safetyassurance
+package:com.samsung.gpudriver.S8MaliG71_90
+package:com.samsung.android.incallui
+package:com.samsung.android.knox.containercore
+package:com.samsung.android.kidsinstaller
+package:com.sec.factory.camera
+package:com.sec.vsimservice
+package:com.sec.usbsettings
+package:com.samsung.accessory.beansmgr
+package:com.samsung.android.easysetup
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.sec.android.easyonehand
+package:com.sec.factory
+package:com.samsung.android.provider.stickerprovider
+package:com.android.htmlviewer
+package:com.samsung.android.app.sbrowseredge
+package:com.android.companiondevicemanager
+package:com.android.mms.service
+package:com.samsung.android.rubin.app
+package:com.sec.android.wallpapercropper2
+package:com.android.providers.downloads
+package:com.diotek.sec.lookup.dictionary
+package:com.sec.android.cover.ledcover
+package:com.sec.android.easyMover.Agent
+package:com.samsung.ucs.agent.boot
+package:com.samsung.accessory.safiletransfer
+package:com.wsomacp
+package:com.samsung.faceservice
+package:com.sec.android.app.voicenote
+package:com.monotype.android.font.foundation
+package:com.sec.android.widgetapp.easymodecontactswidget
+package:com.samsung.android.email.provider
+package:com.samsung.android.MtpApplication
+package:com.sec.android.app.factorykeystring
+package:com.sec.android.app.samsungapps
+package:com.sec.android.emergencymode.service
+package:com.tplink.tether
+package:com.google.android.configupdater
+package:com.sec.android.app.wlantest
+package:com.microsoft.office.excel
+package:com.samsung.android.app.camera.sticker.facear.preload
+package:com.samsung.android.app.settings.bixby
+package:com.sec.android.app.billing
+package:com.samsung.android.app.selfmotionpanoramaviewer
+package:com.sec.epdgtestapp
+package:com.samsung.android.timezone.data_P
+package:com.samsung.android.game.gamehome
+package:com.sec.android.app.desktoplauncher
+package:com.android.defcontainer
+package:com.samsung.android.widgetapp.yahooedge.finance
+package:com.sec.android.daemonapp
+package:com.samsung.daydream.customization
+package:com.google.ar.core
+package:com.sec.ims
+package:com.sec.sve
+package:com.sec.enterprise.knox.attestation
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.android.simappdialog
+package:com.samsung.systemui.bixby2
+package:com.dsi.ant.service.socket
+package:com.sec.android.AutoPreconfig
+package:com.microsoft.skydrive
+package:com.samsung.android.SettingsReceiver
+package:com.android.internal.display.cutout.emulation.tall
+package:com.sec.android.app.soundalive
+package:com.sec.android.providers.security
+package:com.sec.android.provider.badge
+package:com.android.certinstaller
+package:de.axelspringer.yana.zeropage
+package:com.samsung.android.securitylogagent
+package:com.android.carrierconfig
+package:com.samsung.android.app.watchmanager
+package:com.samsung.android.knox.containeragent
+package:com.reddit.frontpage
+package:com.samsung.android.app.assistantmenu
+package:com.candl.chronos
+package:com.samsung.SMT
+package:com.samsung.cmh
+package:com.samsung.mlp
+package:com.samsung.rcs
+package:com.sec.android.ofviewer
+package:com.sec.factory.iris.usercamera
+package:com.samsung.android.drivelink.stub
+package:android
+package:com.android.hotwordenrollment.xgoogle
+package:com.samsung.android.sm.devicesecurity
+package:com.dsi.ant.sample.acquirechannels
+package:com.samsung.android.net.wifi.wifiguider
+package:com.samsung.android.bixby.service
+package:com.samsung.android.smartface
+package:com.android.egg
+package:com.android.mtp
+package:com.android.nfc
+package:com.android.stk
+package:com.samsung.android.messaging
+package:com.samsung.android.emojiupdater
+package:com.android.backupconfirm
+package:com.samsung.android.widgetapp.yahooedge.sport
+package:com.samsung.klmsagent
+package:com.instagram.android
+package:com.samsung.android.smartfitting
+package:com.sec.android.app.SecSetupWizard
+package:com.pinterest
+package:com.samsung.android.app.telephonyui
+package:com.samsung.android.samsungpositioning
+package:com.android.statementservice
+package:com.google.android.gm
+package:com.samsung.android.bixby.agent
+package:com.google.android.apps.tachyon
+package:com.sec.android.app.hwmoduletest
+package:com.android.settings.intelligence
+package:com.sec.bcservice
+package:org.chromium.webapk.a69ab1c52e5d4ce5d
+package:com.sec.modem.settings
+package:com.samsung.android.server.iris
+package:com.android.systemui.theme.dark
+package:com.samsung.android.providers.context
+package:com.sec.android.app.servicemodeapp
+package:com.sec.android.preloadinstaller
+package:com.sec.android.uibcvirtualsoftkey
+package:com.google.android.setupwizard
+package:com.sec.android.gallery3d
+package:com.android.providers.settings
+package:com.samsung.accessibility
+package:com.sec.imsservice
+package:com.android.sharedstoragebackup
+package:com.facebook.services
+package:com.google.android.music
+package:com.samsung.android.mobileservice
+package:com.android.printspooler
+package:com.android.hotwordenrollment.okgoogle
+package:com.samsung.android.hmt.vrsvc
+package:com.samsung.android.bixby.es.globalaction
+package:com.samsung.storyservice
+package:com.android.dreams.basic
+package:com.sec.android.app.music
+package:com.android.se
+package:com.android.inputdevices
+package:com.samsung.android.kgclient
+package:com.samsung.knox.securefolder
+package:com.samsung.android.app.talkback
+package:com.android.bips
+package:com.android.stk2
+package:com.samsung.android.game.gametools
+package:com.samsung.desktopsystemui
+package:com.samsung.android.app.simplesharing
+package:com.samsung.android.service.peoplestripe
+package:com.samsung.android.da.daagent
+package:com.sec.android.watchweb
+package:com.samsung.android.brightnessbackupservice
+package:com.samsung.android.app.reminder
+package:com.twitter.android
+package:com.samsung.app.slowmotion
+package:com.samsung.android.timezone.autoupdate_O
+package:com.samsung.android.smartcallprovider
+package:com.samsung.android.app.smartcapture
+package:com.sec.android.desktopmode.uiservice
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.dsi.ant.plugins.antplus
+package:com.samsung.android.app.taskedge
+package:com.microsoft.office.word
+package:com.samsung.advp.imssettings
+package:com.samsung.android.location
+package:com.sec.android.inputmethod
+package:com.samsung.android.app.advsounddetector
+package:com.teslacoilsw.launcher.prime
+package:com.sec.android.app.clockpackage
+package:com.sec.android.RilServiceModeApp
+package:com.google.android.webview
+package:com.samsung.android.mdecservice
+package:com.sec.android.app.simsettingmgr
+package:com.microsoft.office.powerpoint
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.samsung.crane
+package:com.sec.imslogger
+package:com.samsung.android.clipboarduiservice
+package:com.android.keychain
+package:com.android.chrome
+package:com.samsung.android.ipsgeofence
+package:com.samsung.android.themecenter
+package:com.google.android.packageinstaller
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tts
+package:android.autoinstalls.config.samsung
+package:com.android.calllogbackup
+package:com.google.android.partnersetup
+package:com.samsung.android.spdfnote
+package:com.sec.android.diagmonagent
+package:com.samsung.android.knox.containerdesktop
+package:com.google.android.videos
+package:com.mindesigns.zwskin.min
+package:com.sec.spp.push
+package:com.android.carrierdefaultapp
+package:com.dsi.ant.server
+package:com.sec.android.app.myfiles
+package:com.android.proxyhandler
+package:com.samsung.android.allshare.service.fileshare
+package:com.sec.android.mimage.photoretouching
+package:com.sec.android.app.launcher
+package:com.samsung.android.universalswitch
+package:com.zhiliaoapp.musically
+package:com.sec.android.app.apex
+package:com.flickr.android
+package:com.google.android.feedback
+package:com.google.android.printservice.recommendation
+package:com.google.android.apps.photos
+package:com.google.android.calendar
+package:com.google.android.syncadapters.calendar
+package:com.android.managedprovisioning
+package:com.samsung.android.setting.multisound
+package:com.samsung.visionprovider
+package:com.samsung.android.authfw
+package:com.sec.android.app.sbrowser
+package:com.monotype.android.font.chococooky
+package:com.android.dreams.phototable
+package:com.sec.android.service.health
+package:com.samsung.safetyinformation
+package:com.samsung.android.dialer
+package:com.facebook.katana
+package:com.samsung.android.dqagent
+package:com.samsung.app.highlightplayer
+package:com.sec.android.app.ringtoneBR
+package:com.samsung.android.game.gos
+package:com.sec.android.app.vepreload
+package:com.android.providers.partnerbookmarks
+package:com.sem.factoryapp
+package:com.samsung.android.keyguardwallpaperupdator
+package:com.trustonic.teeservice
+package:com.android.wallpaper.livepicker
+package:com.samsung.android.beaconmanager
+package:com.sec.enterprise.mdm.services.simpin
+package:com.android.apps.tag
+package:com.samsung.android.stickercenter
+package:com.facebook.system
+package:com.samsung.android.oneconnect
+package:com.sec.android.app.popupcalculator
+package:com.sec.android.soagent
+package:com.google.android.gms.policy_sidecar_aps
+package:com.sec.android.app.quicktool
+package:com.samsung.android.fmm
+package:com.samsung.android.mdm
+package:com.samsung.android.rlc
+package:com.samsung.android.voc
+package:com.sec.android.app.shealth
+package:com.sec.unifiedwfc
+package:com.sec.phone
+package:com.samsung.android.bixby.wakeup
+package:com.samsung.accessory
+package:com.google.android.backuptransport
+package:com.samsung.android.app.interactivepanoramaviewer
+package:com.samsung.android.samsungpass
+package:com.samsung.android.bixby.plmsync
+package:com.android.storagemanager
+package:com.samsung.android.scloud
+package:com.samsung.android.app.soundpicker
+package:com.sec.app.RilErrorNotifier
+package:com.samsung.android.spayfw
+package:com.samsung.android.ststub
+package:com.android.bookmarkprovider
+package:com.linkedin.android
+package:com.android.settings
+package:com.samsung.app.newtrim
+package:fm.anchor.android
+package:com.samsung.android.dsms
+package:com.samsung.android.lool
+package:com.samsung.android.app.notes
+package:com.sec.android.app.bluetoothtest
+package:com.sec.android.sdhms
+package:com.samsung.android.app.spage
+package:com.incorporateapps.fakegps.fre
+package:com.samsung.android.knox.analytics.uploader
+package:com.samsung.android.sm.policy
+package:com.sec.android.emergencylauncher
+package:com.tumblr
+package:com.sec.hearingadjust
+package:com.sec.android.easyMover
+package:com.google.android.apps.turbo
+package:com.fastemulator.gbafree
+package:com.samsung.android.bluelightfilter
+package:com.samsung.android.bbc.bbcagent
+package:com.samsung.android.visionintelligence
+package:com.knox.vpn.proxyhandler
+package:com.android.cts.ctsshim
+package:com.sec.android.splitsound
+package:com.samsung.android.app.watchmanagerstub
+package:com.samsung.android.svcagent
+package:com.samsung.android.mateagent
+package:com.samsung.android.networkdiagnostic
+package:com.enhance.gameservice
+package:com.samsung.android.shortcutbackupservice
+package:com.android.vpndialogs
+package:com.samsung.ucs.agent.ese
+package:com.android.phone
+package:com.google.vr.vrcore
+package:com.android.shell
+package:com.android.wallpaperbackup
+package:com.android.providers.blockednumber
+package:com.samsung.android.app.omcagent
+package:com.hiya.star
+package:com.android.providers.userdictionary
+package:com.sec.enterprise.knox.cloudmdm.smdms
+package:com.samsung.android.app.camera.sticker.stamp.preload
+package:com.android.emergency
+package:com.wssyncmldm
+package:com.samsung.ims.smk
+package:com.android.location.fused
+package:com.samsung.android.app.appsedge
+package:com.samsung.android.samsungpassautofill
+package:com.sec.epdg
+package:com.android.systemui
+package:com.sec.android.app.personalization
+package:com.monotype.android.font.cooljazz
+package:com.android.bluetoothmidiservice
+package:com.samsung.android.sdk.handwriting
+package:com.facebook.appmanager
+package:com.samsung.aasaservice
+package:com.samsung.systemui.hidenotch
+package:com.android.traceur
+package:com.samsung.android.allshare.service.mediashare
+package:com.sec.android.provider.emergencymode
+package:com.google.android.play.games
+package:com.sec.android.app.applinker
+package:com.sec.android.app.camera
+package:com.android.bluetooth
+package:com.samsung.android.contacts
+package:com.samsung.android.app.clipboardedge
+package:com.android.providers.contacts
+package:com.samsung.ipservice
+package:com.sec.android.app.magnifier
+package:com.sec.android.widgetapp.webmanual
+package:com.samsung.sec.android.application.csc
+package:com.android.captiveportallogin
+package:com.samsung.android.app.motionpanoramaviewer
+package:com.samsung.android.bio.face.service
+package:com.samsung.android.bixby.agent.dummy
+package:com.samsung.android.video
+package:com.google.android.apps.restore
+
+2022-10-27 18:10:31,759:INFO:Profilers:Start final aggregation
+2022-10-27 18:10:31,760:DEBUG:PluginHandler:%s: aggregating results
