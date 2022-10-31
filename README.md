@@ -10,9 +10,10 @@ This repository contains the replication package for the research paper: "Who dr
 
 ## How to run the experiment?
 ### Preparation
-Install Android version 6.0.1 on the smartphone and dowload the native applications from the selected application list.
+Install Android version 6.0.1 on the smartphone and download the native applications from the selected application list. Install the tools ***Android runner***, ***Monkey runner*** and ***Batterystats*** on a Raspberry Pi. To install these tools, follow the guidelines provided by the [S2-group/android-runner](https://github.com/S2-group/android-runner) repository.   
 
 ### Set up
+Connect the Android smartphone with a raspberry Pi using a USB cable to control the smartphone. Ensure the smartphone is unlocked and the screen is on the lowest brightness. Use a laptop to SSH into the Raspberry Pi and execute the python script in the experiments/config directory. Specify in the python script whether to run the scripts to measure the energy consumption of the Android apps or Web apps.     
 
 ### R scripts
-
+Use the complete_results_20221029.csv when executing the R script in the results directory.
